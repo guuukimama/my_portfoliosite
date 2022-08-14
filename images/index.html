@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>JavaScript Basics</title>
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'dua3baa',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+</head>
+
+<body>
+    <div class="all-bg ">
+
+        <div class="main-img all-vg">
+            <div class="main-contents">
+                <h1><img class="concept" src="./images/mainlogo.png" alt="チルカフェのロゴ"></h1>
+                <h2>チルカフェ</h2>
+                <h2>新宿の小さなカフェ </h2>
+                <!-- <img class="main-img" src="./images/main1.jpg" alt="カフェサイト画像"> -->
+            </div>
+        </div>
+
+
+        <div class="middle">
+
+            <div class="all-concept">
+
+                <div class="all-concept-innner">
+                    <img class="concept01" src="./images/concept01.png" alt="コーヒー">
+                    <h3>早朝の一杯</h3>
+                    <p>
+                        通勤前にエスプレッソを一杯。イタリアの普通の風景ですが、日本にはそんなカフェが少ないみたいです。イタリアの朝の空気が好きで、日本でも朝早くお店を開けることにしました。
+                        “おはよう”と一杯のエスプレッソをどうぞ。
+                    </p>
+                </div>
+
+                <div class="all-concept-innner">
+                    <img class="concept01" src="./images/concept02.png" alt="ワイン">
+                    <h3>仕事終わりの一杯</h3>
+                    <P>仕事終わりにイタリアンバールで落ち着いた一杯はいかがですか。都会の喧騒から少し離れて、ビールかワイン。イタリアの家庭料理と一緒にさっと飲んで、明日また頑張りましょう。
+                        締めのエスプレッソもご用意できます。
+                    </P>
+                </div>
+
+
+            </div>
+
+
+            <div class="introduction">
+                <img class="concept02" src="./images/introduction01.png" alt="コーヒー">
+                <h3>イタリアの豆をそのまま</h3>
+                <p>イタリア・ナポリから上質なものだけを少量ずつ直輸入。日本ではここでしか飲めないナポリの味を新鮮なままにお届けします。長年愛用のマシンでプロのエスプレッソを抽出します。
+                </p>
+                <img class="concept02 concept02-1" src="./images/introduction02.png" alt="コーヒー">
+                <h3>料理は丁寧に だけど気軽に</h3>
+                <p>イタリアの家庭料理を日替わりでご提供。
+                    ハーブもパンチェッタも、できるだけ自家製のものを使ってお作りします。時には余った食材で気まぐれメニューを作るかも。肩肘張らずリラックスして楽しんで頂けたらと思います。
+                </p>
+            </div>
+
+            <div class="menu01">
+                <div class="menu-contents">
+                    <h3>朝メニュー</h3>
+                    <table>
+                        <tr>
+                            <td>エスプレッソ</td>
+                            <td> ¥300</td>
+                        </tr>
+                        <tr>
+                            <td>カフェ・マキアート </td>
+                            <td> ¥300</td>
+                        </tr>
+                        <tr>
+                            <td>カプチーノ</td>
+                            <td> ¥400</td>
+                        </tr>
+                    </table>
+                </div>
+
+            </div>
+
+            <div class="menu02">
+                <div class="menu-contents">
+
+                    <h3>夜メニュー</h3>
+
+                    <p>朝のメニューは夜もご提供できます。<br>
+                        ワインやパスタはご来店の際にお尋ねください。
+                    </p>
+
+                    <table>
+                        <tr>
+                            <td>生ビール</td>
+                            <td> ¥500</td>
+                        </tr>
+                        <tr>
+                            <td>イタリアンビール </td>
+                            <td> ¥600</td>
+                        </tr>
+                        <tr>
+                            <td>ワイン各種</td>
+                            <td> ¥600</td>
+                        </tr>
+                        <tr>
+                            <td>カクテル各種</td>
+                            <td> ¥700</td>
+                        </tr>
+                    </table>
+
+                </div>
+
+            </div>
+
+            <div class="store-info ">
+                <h3>お店の情報</h3>
+                <div class="info ">
+                    <div class="info-text info-border">
+                        <h4><img class="concept-img" src="./images/mainlogo.png" alt="チルカフェのロゴ"></h4>
+                        <h5>チルカフェ</h5>
+                        <h5>新宿の小さなカフェ </h5>
+                    </div>
+
+                    <div class="info-text ">
+                        <dl>
+                            <dt>営業時間</dt>
+                            <dd>AM 6:00～10:00</dd>
+                            <dd>AM 6:00～10:00</dd>
+                            <dt>定休日</dt>
+                            <dd>水曜・祝日</dd>
+                            <dt>住所</dt>
+                            <dd>〒000-0000</dd>
+                            <dd>東京都 新宿区 西新宿 0-0-0</dd>
+                        </dl>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div>
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d70030.00978281179!2d139.5830839289253!3d35.51572750927731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185eda022dd1bd%3A0x2ed62e22af68ca17!2z5qiq5rWc44Ki44Oq44O844OK!5e0!3m2!1sja!2sjp!4v1627186958952!5m2!1sja!2sjp"
+                        width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d70030.00978281179!2d139.5830839289253!3d35.51572750927731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60185eda022dd1bd%3A0x2ed62e22af68ca17!2z5qiq5rWc44Ki44Oq44O844OK!5e0!3m2!1sja!2sjp!4v1627186958952!5m2!1sja!2sjp" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+            </div>
+
+            <div class="information">
+                <p class="information-reserve">ご予約・お問合せはこちらまで</p>
+                <p class="phone-nb">080-0000-0000</p>
+                <img src="./images/Instagram.png" alt="インスタグラムのアイコン">
+                <p class="insta-text">instgram</p>
+
+            </div>
+
+        </div>
+
+        <footer>
+            <p>Copyright (C) 2018 ChillCafe. All Rights Reserved.
+            </p>
+        </footer>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+</body>
+
+</html>

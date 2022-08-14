@@ -1,0 +1,158 @@
+============================================================
+price
+============================================================
+
+------------------------------------------------------------
+HTML
+------------------------------------------------------------
+<!--price--------------------------------------------------
+------------------------------------->
+<section class="price" id="price">
+      <h2>Price</h2>
+      <h3><p>大切にしているのは</p>
+        <p>歯だけでなく、お顔全体を見据えた分析と、シミュレーションを用いた精密カウンセリング。</p>
+      <p>プロフェッショナルによる、オーダーメイドのご提案です。</p></h3>
+      <table class="tb">
+        <tbody>
+          <tr class="n3t">
+            <th scope="row">N3 Teeth<br>（エヌスリ―ティース）</th>
+            <td >￥７０．０００/本・・・ジルコニアセラミックス<br>
+              ￥６５，０００/本・・・e-Max<br>
+            ￥４５，０００/本・・・ハイブリッドレジン</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="text">参考価格<br>
+        ラミネートベニヤ¥１００，０００／本～<br>
+        セラミッククラウン￥１５０，０００/本～<br>
+      歯列矯正￥１，０００，０００～</p>
+      <h3>綺麗さ</h3>
+      <table class="tb">
+        <tbody>
+          <tr class="n3t_2">
+            <th scope="row">ジルコニア</th>
+            <td>◎いつまでも変化なく綺麗です</td>
+          </tr>
+          <tr>
+            <th scope="row">e-max</th>
+            <td>◎いつまでも変化なく綺麗です</td>
+          </tr>
+          <tr>
+            <th scope="row">ハイブリットレジン</th>
+            <td> 〇経年的に艶が落ちてきます。定期的なメンテナンス時に艶を出すことは可能です</td>
+          </tr>
+        </tbody>
+      </table>
+      <h3>強度</h3>
+      <table class="tb">
+        <tbody>
+          <tr>
+            <th width="350" scope="row">ジルコニア</th>
+            <td>◎ 1000M㎩以上と高強度を有します</td>
+          </tr>
+          <tr>
+            <th width="350" scope="row">e-max</th>
+            <td> 〇400MPaの強度を有します</td>
+          </tr>
+          <tr>
+            <th width="350" scope="row">ハイブリットレジン</th>
+            <td> 〇124MPaの強度を有します</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="text">※従来から使用されている金属の上にセラミックスを築盛するタイプのセラミックスは 約90MPaの強度です</p>
+      <h3>お手入れ</h3>
+      <table class="tb">
+        <tbody>
+          <tr>
+            <th width="350" scope="row">ジルコニア</th>
+            <td>◎歯ブラシ、歯磨き粉を選びません</td>
+          </tr>
+          <tr>
+            <th width="350" scope="row">e-max</th>
+            <td> ◎歯ブラシ、歯磨き粉を選びません</td>
+          </tr>
+          <tr>
+            <th width="350" scope="row">ハイブリットレジン</th>
+            <td> 〇歯ブラシは選びませんが、歯磨き粉は研磨剤の入っていない物を使用していただきます</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+
+
+
+------------------------------------------------------------
+CSS
+------------------------------------------------------------
+/* ------------------------------
+   price <section>
+   ------------------------------ */
+/* ------------------------------
+   price
+   ------------------------------ */
+.price h3 {
+	margin: 0 auto;
+	width: 1000px;
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.price .text {
+	text-align: center;
+	margin-top: 50px;
+}
+
+.price table {
+	margin: 0 auto;
+	width: 1000px;
+	border-collapse: collapse;
+	border: medium solid #707070;
+}
+.price table tbody th ,.price table tbody td{
+	border: 1px solid #707070;
+}
+.price table .n3t {
+	border: none;
+}
+
+
+<!--レスポンシブ---------------------------------------------------------------
+------------------------------------->
+.price h3  {
+    margin: 0 auto;
+    width: 100vw;
+}
+.n3t {
+    width: 100%;
+}
+.n3t br {
+    display: inherit;
+}
+
+.tb {
+    width: 1000px;
+}
+
+.price .tb {
+    width: 100%;
+
+
+
+}
+.tb th {
+    width: auto;
+
+}
+.td td {
+    width: auto;
+
+}
+.n3t_2  {
+    width: 100%;
+}
+.n3t_2 th {
+    width: auto;
+}
+

@@ -1,0 +1,86 @@
+============================================================
+promise
+============================================================
+
+------------------------------------------------------------
+HTML
+------------------------------------------------------------
+  <section id="promise">
+    <h2>Promise</h2>
+    <div class="promise_text">
+      <p>まるでオーダーメイドのネイルチップのように、あなたのためだけに作られた薄い人工の歯を貼りつける。
+        抜かず、削らず、痛くない。
+        そんな画期的な方法で、美しい歯とフェイスラインをお約束いたします。</p>
+    </div>
+    <div class="promise_box claerfix">
+      <div class="promise_col">
+        <p><img src="images/Promise_01.png" width="312" height="258" alt="NOダメージ"/></p>
+        <p>歯を削らない（ノンプレップ）ため、<br>
+          歯にダメージがない</p>
+      </div>
+      <div class="promise_col">
+        <p><img src="images/Promise_02.png" width="312" height="258" alt="NOペイン"/></p>
+        <p>歯を削らないので痛みがない</p>
+      </div>
+      <div class="promise_col">
+        <p><img src="images/Promise_03.png" width="312" height="258" alt="NOコンプレックス"/></p>
+        <p>あなたのコンプレックスを解消します</p>
+      </div>
+    </div>
+    <div class="promise_text">
+      <h3>歯科医師よりあなたへ</h3>
+      <p><img src="images/Promise_04.png" width="346" height="346" alt=""/></p>
+      <h4>皆様は、歯、口元にコンプレックスはないですか？</h4>
+      <p>昔は歯に関するコンプレックスを解消する選択肢は少なかったかもしれません。しかし、現在ではさまざまな選択肢があります。
+        その１つがこの「N3Teeth」です。
+        まさに３つのN、削らない（NOダメージ）、痛くない（NOペイン）、コンプレックスを解消（NOコンプレックス）最もシンプルな審美治療です。
+        患者様にご満足いただくために、分析、シミュレーションを用いたカウンセリングで、特徴やメリット・デメリットを分かりやすくご説明いたします。
+        患者様とじっくり話し合い、この治療のゴールを共有いたします。
+        患者様のお口の状態やご要望に合わせた
+        オーダーメイドの治療をご提案させていただきます。 </p>
+      <p class="text_right">ひかり歯科クリニック 院長　吉田和正</p>
+    </div>
+  </section>
+------------------------------------------------------------
+CSS
+------------------------------------------------------------
+/* ------------------------------
+   promise <section>
+   ------------------------------ */
+.promise_text {
+  margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 50px;
+  width: 600px;
+}
+.promise_box {
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+    width: 1000px;
+    height: 380px;
+    margin-bottom: 50px;
+}
+.promise_col {
+  width: 320px;
+  float: left;
+}
+.promise_col p {
+    width: 320px;
+    text-align: center;
+}
+.promise_text h3 {
+    text-align: center;
+    padding-bottom: 50px;
+}
+.promise_text p img {
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+    text-align: center;
+}
+text_right  {
+    text-align: right;
+}

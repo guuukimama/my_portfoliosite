@@ -1,0 +1,140 @@
+============================================================
+story
+============================================================
+
+------------------------------------------------------------
+HTML
+------------------------------------------------------------
+    <section id="story">
+      <h2>Story</h2>
+      <div class="story_box01">
+        <div class="element js-animation story_text01">
+          <h3>綺麗な歯、だけでいいの？</h3>
+          <p>痛い、時間がかかる、何度も通うのは辛い。<br>
+            そんなわずらわしさから解き放たれて、<br>
+            口元から幸せを読び込むことができたとしたら。<br>
+            自信のある口元で、<br>
+            内面の美しさそのものに笑うことができたなら。</p>
+        </div>
+        <div class="element js-animation story_img01">
+          <p><img src="images/story_01.png" width="100%" height="576" alt="頬に手を当てて"/></p>
+        </div>
+        <div class="element js-animation story_img02">
+          <p><img src="images/story_02.png" width="258" height="258" alt="ラベンダー"/></p>
+        </div>
+        <div class="element js-animation story_img03">
+          <p><img src="images/story_03.png" width="338" height="338" alt=""/></p>
+        </div>
+      </div>
+      <div class="story_box02">
+        <div class="element js-animation story_img04">
+          <p><img src="images/story_04.png" width="532" height="576" alt=""/></p>
+        </div>
+        <div class="element js-animation story_img05">
+          <p><img src="images/story_05.png" width="281" height="281" alt=""/></p>
+        </div>
+        <div class="element js-animation story_text02">
+          <h3>歯が変わると、骨格が変わる。</h3>
+          <h3>骨格が変わると、笑顔が変わる。</h3>
+        </div>
+      </div>
+      <div class="story_box03">
+        <div class="element js-animation story_text03">
+          <p>「歯は顔の一部」という考えのもと、<br>
+            ゴールデンプロポーション（黄金比）を<br>
+            使用し、顔と歯を絡めた分析を<br>
+            お一人お一人に対して行います。 </p>
+        </div>
+        <div class="element js-animation story_text04">
+          <p>N3Tは、特許第5224432を<br>
+            取得した、最もシンプルな<br>
+            審美回復方法です。</p>
+        </div>
+        <div class="element js-animation story_img06">
+          <p><img src="images/story_06.png" width="430" height="444" alt=""/></p>
+        </div>
+      </div>
+    </section>
+------------------------------------------------------------
+CSS
+------------------------------------------------------------
+/* ------------------------------
+   story <section>
+   ------------------------------ */
+/* efectd */
+.js-animation {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(50px);
+  transition: all 1.5s;
+}
+.js-animation.is-show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+}
+/* ------ */
+.story_box01 {
+  width: 1200px;
+  height: 1000px;
+  position: relative;
+}
+.story_text01 {
+    position: absolute;
+    top: 100px;
+    left: 150px;
+}
+.story_img01 {
+  position: absolute;
+  top: 0px;
+  left: 600px;
+}
+.story_img02 {
+  position: absolute;
+  left: 450px;
+  top: 550px;
+}
+.story_img03 {
+  position: absolute;
+  top: 650px;
+  left: 700px;
+}
+.story_box02 {
+  width: 1200px;
+  height: 900px;
+  position: relative;
+}
+.story_img04 {
+  position: absolute;
+  top: 0px;
+  left: 68px;
+}
+.story_img05 {
+  position: absolute;
+  left: 488px;
+  top: 560px;
+}
+.story_text02 {
+  position: absolute;
+  top: 150px;
+  left: 655px;
+}
+.story_box03 {
+  width: 1200px;
+  height: 500px;
+  position: relative;
+}
+.story_img06 {
+  position: absolute;
+  left: 600px;
+}
+.story_text03 {
+  position: absolute;
+  top: 20px;
+  left: 190px;
+}
+.story_text04 {
+  position: absolute;
+  left: 190px;
+  top: 150px;
+}

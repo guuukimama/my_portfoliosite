@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>無題ドキュメント</title>
+<style type="text/css">
+.slide p {
+    float: left;
+}
+.text1 {
+}
+</style>
+<script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
+<script>
+	$(function() {
+	$(".slide") .carouFredSel({
+		circular:true,
+		direction:"left",
+		scroll:{
+			duration:1500,
+			fx:"uncover-fade",
+			easing:"linear",
+			items:1	
+		},
+		auto:{
+			play:true,
+			timeoutDuration:1500,
+			pauseOnHover:"immediate"
+		},
+		items:{
+			visible:1,
+			start:0,
+			height:"40%"
+				
+		},
+		prev:".btn-prev",
+		next:".btn-next",
+		pagination: {
+			container:".slide-pg"
+		},
+		responsive:true,
+	});
+	});
+</script>
+<script>
+	$(function() {
+	$(".slide") .carouFredSel({
+		circular:true,
+		direction:"left",
+		scroll:{
+			duration:1500,
+			fx:"uncover-fade",
+			easing:"linear",
+			items:1	
+		},
+		auto:{
+			play:true,
+			timeoutDuration:1500,
+			pauseOnHover:"immediate"
+		},
+		items:{
+			visible:1,
+			start:0,
+			height:"40%"
+				
+		},
+		prev:".btn-prev",
+		next:".btn-next",
+		pagination: {
+			container:".slide-pg"
+		},
+		responsive:true,
+	});
+	});
+</script>	
+</head>
+
+<body>
+<div class="slide">	
+<p><img src="img/image01.jpg" width="800" height="600" alt=""/></p>
+<p><img src="img/image02.jpg" width="800" height="534" alt=""/></p>
+<p><img src="img/image03.jpg" width="800" height="534" alt=""/></p>
+<p><img src="img/image04.jpg" width="800" height="534" alt=""/></p>
+<p><img src="img/image05.jpg" width="800" height="534" alt=""/></p>
+<p><img src="img/image06.jpg" width="800" height="532" alt=""/></p>
+</div>	
+<div>
+	<p class="text1">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+	<p class="text1">bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb</p>
+	<p class="text1">ccccccccccccccccccccccccccccccccccccc</p>
+	<p class="text1">dddddddddddddddddddddddddddddddddddd</p>
+	<p class="text1">eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</p>
+	<p class="text1">fffffffffffffffffffffffffffffffffffffff</p>
+	</div>	
+</body>
+</html>

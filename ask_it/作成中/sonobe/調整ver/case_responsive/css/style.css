@@ -1,0 +1,504 @@
+@charset "utf-8";
+body, p, h1, h2, h3, ul {
+  padding: 0;
+  margin: 0;
+}
+img {
+  border: none;
+  vertical-align: middle;
+}
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 1.8;
+}
+.inner {
+  margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 0;
+  width: 1200px;
+}
+.inner h2 {
+  margin: 50px 0 50px;
+  text-align: center;
+}
+header {
+    background-image: url(../images/bg.png);
+    height: 280px;
+    background-repeat: repeat;
+}
+header .inner {
+  position: relative;
+}
+header h1 {
+  position: absolute;
+  left: 0px;
+}
+nav {
+  margin-left: 300px;
+}
+nav ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+nav li {
+  float: left;
+}
+main {
+  margin-top: 50px;
+}
+h2 {
+  color: #707070;
+  font-size: 3.5em;
+  text-align: center;
+}
+dl {
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 0;
+  width: 1000px;
+}
+dl dt {
+  border-radius: 50px;
+  border: 1px solid #707070;
+  width: 1000px;
+  height: 100px;
+  background-color: rgba(80, 33, 74, 0.50);
+  margin-bottom: 1em;
+}
+dt p {
+    color: #FFFFFF;
+    text-align: left;
+    margin-left: 30px;
+}
+dl dd {
+  border-radius: 50px;
+  border: 1px solid #707070;
+  width: 1000px;
+  height: 100px;
+  background-color: rgba(197, 164, 63, 0.43);
+  margin-bottom: 5em;
+  margin-left: 0px;
+}
+dd p {
+    margin-top: 10px;
+    color: #707070;
+    text-align: left;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+#qa p {
+    text-align: center;
+}
+
+footer {
+  height: 300px;
+  background-color: #50214A;
+}
+footer p {
+  text-align: center;
+  color: #FFFFFF;
+  padding-top: 100px;
+}
+body {
+    height: 100vh;
+}
+.test  {
+    border-radius: 50px;
+    border: 1px solid #707070;
+    width: 1000px;
+    height: 100px;
+    background-color: rgba(197, 164, 63, 0.43);
+    background-color: #DCCEA3;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+}
+/*☟を入れるやつ*/
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 30px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+.annai {
+    text-align: center;
+    width: 700px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+.table {
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+
+
+
+
+
+
+}
+
+.table th {
+    width: 100px;
+    margin-left: 300px;
+    height: 50px;
+
+}
+.table td {
+    width: 600px;
+}
+
+.table2 {
+    width: 200px;
+    float: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+}
+.table2 p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.table2 th {
+    text-align: left;
+    margin-bottom: 50px;
+    height: 50px;
+
+}
+.table2 tr {
+    height: 50px;
+}
+.table3 {
+    float: left;
+    text-align: center;
+    height: 200px;
+    border-collapse: collapse;
+    width: 576px;
+}
+.table3 th  {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    width: 100px;
+}
+.table3 td {
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+.map {
+    width: 700px;
+    height: 500px;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+.inner h3 {
+    margin: 50px 0 50px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.staf h4 {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+.time {
+    display: flex;
+    justify-content: center;
+    height: 250px;
+}
+.inner2  {
+    margin-bottom: 80px;
+
+
+}
+
+@media screen and (max-width:750px){
+#qa {
+    width: 100vw;
+}
+.test {
+    width: 100%;
+    height: 150px;
+    text-align: left;
+}
+
+.annai {
+
+
+}
+
+
+.table {
+    width: 100vw;
+
+
+}
+
+.inner h2 {
+    width: 100%;
+}
+
+.table th {
+
+}
+
+.table td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.inner {
+}
+.time {
+    flex-direction: column;
+    margin: 0 auto;
+    height: 500px;
+}
+.table2 {
+    text-align: center;
+    width: 100vw;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+
+
+
+}
+.table2_inner {
+    justify-content: center;
+}
+
+.table2 p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+
+
+.table3 {
+    width: 100%;
+}
+
+.table3 th {
+    width: auto;
+}
+.map {
+    width: 100%;
+    display: inline-block;
+}
+.inner h3 {
+	
+    width: 100%;
+}
+
+.staf {
+    width: 100%;
+
+}
+}
+@media (max-width:750px){
+	.inner {
+	width: 100%;
+}
+header .inner {
+	width: 100%;
+}
+header h1 img {
+	width: 150px;
+	height: 150px;
+}
+
+header {
+	height: 132px;
+}
+	
+
+/* bager menu */
+  
+#header #navi {
+  transition: all .6s;
+  overflow-y: auto;
+  padding-top: 40px;
+  width: 300px;
+  height: 100vh;
+  z-index: 200;
+  top: 0;
+  right: -320px;
+  background-color: #fff;
+  position: fixed;
+}
+ 
+#header .nav_btn {
+  width: 44px;
+  height: 44px;
+  z-index: 300;
+  top: 0px;
+  right: 0px;
+  cursor: pointer;
+  position: fixed;
+  background-color: #50214a9d;
+}
+ 
+.hamburger_line {
+  transition: all .6s;
+  width: 34px;
+  height: 2px;
+  right: 5px;
+  background-color: #c5a43f;
+  position: fixed;
+}
+ 
+.hamburger_line1 { top: 8px; }
+.hamburger_line2 { top: 21px; }
+.hamburger_line3 { top: 32px; }
+ 
+.nav_bg {
+  opacity: 0;
+  transition: all .6s;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  background-color: #000;
+  cursor: pointer;
+  position: fixed;
+}
+ 
+/* 表示された時用のCSS */
+.nav_open #header #navi { right: 0; }
+ 
+.nav_open .nav_bg {
+  opacity: .8;
+  visibility: visible;
+}
+ 
+.nav_open .hamburger_line1 {
+  transform: rotate(45deg);
+  top: 20px;
+}
+ 
+.nav_open .hamburger_line2 {
+  width: 0;
+  right: 50%;
+}
+ 
+.nav_open .hamburger_line3 {
+  transform: rotate(-45deg);
+  top: 20px;
+}
+.pc_nav{
+	display: none;
+}
+#navi li{
+	float: none;
+	font-size: 2.5em;
+  text-align: center;
+}
+#navi a{
+	text-decoration: none;
+	color: #50214A;
+}
+#navi a:hover{
+	color:#c5a43f;
+}
+.price h3  {
+    margin: 0 auto;
+    width: 100%;
+}
+.n3t {
+    width: 100%;
+}
+.n3t br {
+    display: inherit;
+}
+
+.tb {
+    width: 1000px;
+}
+
+.price .tb {
+    width: 100%;
+
+
+
+}
+.tb th {
+    width: auto;
+
+}
+.td td {
+    width: auto;
+
+}
+.n3t_2  {
+    width: 100%;
+}
+.n3t_2 th {
+    width: auto;
+}
+.inner dl  {
+    width: 100%;
+}
+.inner dt {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 130px;
+}
+.inner dd {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 130px;
+}
+.flow_box  {
+    width: 90%;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.center  {
+    width: 100%;
+    text-align: center;
+}
+.flow_box p {
+    text-align: left;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+}
+@media (min-width:751px){
+	#navi{
+		display: none;
+	}
+
+}

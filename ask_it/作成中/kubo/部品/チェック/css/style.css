@@ -1,0 +1,375 @@
+/* ------------------------------
+   common
+   ------------------------------ */
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 1.8;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+.inner {
+  margin: 0 auto;
+  width: 1200px;
+  max-width: 100%;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* ------------------------------
+   section
+   ------------------------------ */
+section h2 {
+  margin: 100px 0 50px;
+  color: #707070;
+  font-size: 3.5em;
+  text-align: center;
+}
+/* ------------------------------
+   header
+   ------------------------------ */
+/* top */
+.header_top {
+  width: 100%;
+  position: absolute;
+  z-index: 100;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.header_top h1 {
+  float: left;
+}
+/* sub */
+.header_sub {
+  background-image: url(../images/bg.png);
+  height: 200px;
+  background-repeat: repeat;
+  width: 100%;
+}
+header .inner {
+  position: relative;
+  width: 1200px;
+}
+.header_sub h1 {
+  position: absolute;
+  left: 0px;
+}
+/* ------------------------------
+   nav
+   ------------------------------ */
+nav {
+  margin-left: 300px;
+}
+nav ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+nav li {
+  float: left;
+}
+/* btn01 */
+.btn01 {
+  background: url("../images/btn_1_on.png") no-repeat;
+  width: 150px;
+  height: 61px;
+}
+.btn01 a {
+  display: inline-block;
+}
+.btn01 a:hover {
+  background-color: transparent; /* IE6対応 */
+}
+.btn01 a:hover img {
+  visibility: hidden;
+}
+/* btn02 */
+.btn02 {
+  background: url("../images/btn_2_on.png") no-repeat;
+  width: 150px;
+  height: 61px;
+}
+.btn02 a {
+  display: inline-block;
+}
+.btn02 a:hover {
+  background-color: transparent; /* IE6対応 */
+}
+.btn02 a:hover img {
+  visibility: hidden;
+}
+/* btn03 */
+.btn03 {
+  background: url("../images/btn_3_on.png") no-repeat;
+  width: 150px;
+  height: 61px;
+}
+.btn03 a {
+  display: inline-block;
+}
+.btn03 a:hover {
+  background-color: transparent; /* IE6対応 */
+}
+.btn03 a:hover img {
+  visibility: hidden;
+}
+/* btn04 */
+.btn04 {
+  background: url("../images/btn_4_on.png") no-repeat;
+  width: 150px;
+  height: 61px;
+}
+.btn04 a {
+  display: inline-block;
+}
+.btn04 a:hover {
+  background-color: transparent; /* IE6対応 */
+}
+.btn04 a:hover img {
+  visibility: hidden;
+}
+/* btn05 */
+.btn05 {
+  background: url("../images/btn_5_on.png") no-repeat;
+  width: 150px;
+  height: 61px;
+}
+.btn05 a {
+  display: inline-block;
+}
+.btn05 a:hover {
+  background-color: transparent; /* IE6対応 */
+}
+.btn05 a:hover img {
+  visibility: hidden;
+}
+/* btn06 */
+.btn06 {
+  background: url("../images/btn_6_on.png") no-repeat;
+  width: 150px;
+  height: 61px;
+}
+.btn06 a {
+  display: inline-block;
+}
+.btn06 a:hover {
+  background-color: transparent; /* IE6対応 */
+}
+.btn06 a:hover img {
+  visibility: hidden;
+}
+/* ------------------------------
+   fotter
+   ------------------------------ */
+.wrapper {
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 350px; /* footerのheightより値を下げない */
+  height: auto;
+}
+footer {
+  height: 300px;
+  background-color: #50214A;
+  text-align: center;
+  color: #FFFFFF;
+  position: absolute;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  bottom: 0;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* ------------------------------
+   mainimage <section>
+   ------------------------------ */
+/* carouFredSel-6.2.1-packed.js */
+#mainimage {
+  top: 0px;
+  left: 0px;
+}
+.slide p {
+  float: left;
+}
+/* ------------------------------
+   story <section>
+   ------------------------------ */
+/* efectd */
+.js-animation {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(50px);
+  transition: all 1.5s;
+}
+.js-animation.is-show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+}
+/* ------ */
+.story_box01 {
+  width: 1200px;
+  height: 1000px;
+  position: relative;
+}
+.story_text01 {
+  position: absolute;
+  top: 100px;
+  left: 150px;
+}
+.story_img01 {
+  position: absolute;
+  top: 0px;
+  left: 600px;
+}
+.story_img02 {
+  position: absolute;
+  left: 450px;
+  top: 550px;
+}
+.story_img03 {
+  position: absolute;
+  top: 650px;
+  left: 700px;
+}
+.story_box02 {
+  width: 1200px;
+  height: 900px;
+  position: relative;
+}
+.story_img04 {
+  position: absolute;
+  top: 0px;
+  left: 68px;
+}
+.story_img05 {
+  position: absolute;
+  left: 488px;
+  top: 560px;
+}
+.story_text02 {
+  position: absolute;
+  top: 150px;
+  left: 655px;
+}
+.story_box03 {
+  width: 1200px;
+  height: 500px;
+  position: relative;
+}
+.story_img06 {
+  position: absolute;
+  left: 600px;
+}
+.story_text03 {
+  position: absolute;
+  top: 20px;
+  left: 190px;
+}
+.story_text04 {
+  position: absolute;
+  left: 190px;
+  top: 150px;
+}
+/* ------------------------------
+   promise <section>
+   ------------------------------ */
+.promise_text {
+  margin: 0 auto;
+  width: 600px;
+  padding-bottom: 50px;
+}
+.promise_box {
+  margin: 0 auto;
+  width: 960px;
+  padding-bottom: 50px;
+}
+.promise_col {
+  width: 320px;
+  float: left;
+  padding-bottom: 50px;
+}
+.promise_col p {
+  text-align: center;
+}
+.promise_text h3 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin: 0 auto;
+  width: 600px;
+  text-align: center;
+  clear: both;
+}
+.promise_img {
+  width: 600px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.promise_text h4 {}
+.text_right {
+  text-align: right;
+}
+/* ------------------------------
+   banner <section>
+   ------------------------------ */
+.banner_box {
+  width: 720px;
+  margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 100px;
+}
+.banner_box p {
+  float: left;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+/* ------------------------------
+   step <section>
+   ------------------------------ */
+.step_box {
+  border-radius: 50px;
+  border: 1px solid #707070;
+  width: 80%;
+  height: 100px;
+  background-color: rgba(197, 164, 63, 0.43);
+  padding: 5px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 10px;
+}
+.step_next {
+  text-align: center;
+  margin-bottom: 10px;
+}
+/* ------------------------------
+   voice <section>
+   ------------------------------ */
+.voice_box {
+  width: 1000px;
+  height: 450px;
+  margin: 0 auto;
+  clear: both;
+  padding-bottom: 50px;
+}
+.voice_top {
+    width: 440px;
+    margin-left: 280px;
+}
+.voice_before {
+    float: left;
+    margin-right: 30px;
+}
+.voice_text {
+    width: 440px;
+    float: left;
+    margin-right: 30px;
+}
+.voice_after {
+  float: left;
+  margin-top: 175px;
+}

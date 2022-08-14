@@ -1,0 +1,951 @@
+@charset "utf-8";
+
+/* ========================================
+    リセットcss
+========================================= */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-style:normal;
+	font-weight: normal;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html{overflow-y: scroll;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {content: ''; content: none;}
+input, textarea,{margin: 0; padding: 0;}
+ol, ul{list-style:none;}
+table{border-collapse: collapse; border-spacing:0;}
+caption, th{text-align: left;}
+a:focus {outline:none;}
+
+
+body {
+    font-family: 'David Libre', serif;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 100px auto;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+a {
+    text-decoration: none;
+    color: #0e0e0e;
+}
+
+.all-h2 {
+    font-size: 40px;
+    text-align: center;
+    padding: 85px 0 100px;
+    
+}
+
+/*-------------------------------------------------------------------------------------
+-----------------カルーセル始まり-------------------------------------------
+-------------------------------*/
+
+.slide {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto 70px;
+  
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  vertical-align: bottom;
+}
+
+/*-------------------------------------------------------------------------------------
+-----------------カルーセル終わり-------------------------------------------
+-------------------------------*/
+
+
+
+
+
+
+/* .main {
+  width: 100%;
+position: relative;
+overflow: hidden;
+} */
+
+.header-bg {
+    background-color: rgba(255,255, 255, 0.8);
+    padding: 50px 0;
+    width: 100%;
+    position: absolute;
+    z-index: 99;
+}
+
+header {
+    text-align: center;
+    margin: 0 auto;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+  
+}
+
+header h1 {
+    margin-top: 10px;
+    
+}
+
+header h1 img {
+  width: auto;
+  height: auto;
+} {
+    margin-top: 10px;
+
+}
+
+header nav {
+
+
+}
+
+header ul {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+
+}
+
+header ul li {
+    font-size:30px;
+}
+
+.an-bar {
+    text-transform: uppercase;
+  }
+
+  .an-bar li {
+    display: inline-block;
+    list-style: outside none none;
+    padding: 0;
+  }
+  .an-bar a {
+    padding: 0.3em 0;
+    color: rgba(0, 0, 0, 0.8);
+    position: relative;
+    letter-spacing: 1px;
+    text-decoration: none;
+  }
+  .an-bar a:before,
+  .an-bar a:after {
+    position: absolute;
+    transition: all 0.35s ease;
+  }
+  .an-bar a:before {
+    bottom: 0;
+    display: inline-block;
+    height: 3px;
+    width: 0%;
+    content: "";
+    background-color: orange;
+  }
+
+  .an-bar a:hover:before,
+  .an-bar .current a:before {
+    opacity: 1;
+    width: 100%;
+  }
+
+  /*--------------------スキル---------------------*/
+    /*------------------------------------------------------------------------
+-------------------画像のスケール--------------------------------
+------------------------------------------------------------*/
+/* .skill {
+    width: 1000px;
+    margin: 0 auto;
+} */
+
+
+  .skill h2 {
+      font-size: 40px;
+  }
+
+  .skill-contents {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+  }
+
+  .skill-box {
+      display: flex;
+      width: calc(50% - 10px);
+      padding-bottom: 80px;
+  }
+
+   .skill-box h3 {
+     font-size: 20px;
+  }
+
+  .skill-contents {
+    /* justify-content: space-between; */
+  }
+  .skill-contents-left {
+      width:50%;
+      text-align: center;
+  }
+
+   .skill-contents-left img {
+     max-width: 150px;
+     padding-bottom:20px;
+  }
+
+    /*------------------------------------------------------------------------
+-------------------プロフィール--------------------------------
+------------------------------------------------------------*/
+.profile-contents {
+  margin: 0 5%;
+
+}
+
+.profile-txt {
+  line-height: 2;
+  margin-bottom: 50px;
+}
+
+.profile-box {
+  display: flex;
+
+}
+
+.profile-left  {
+  width: 200px;
+  height:200px;
+  margin-right: 5%;
+  border-radius: 50%;
+  background-image: url(../images/profile-01.png);
+  background-position-x: 40%;
+  background-position-y: 20%;
+}
+
+.profile-right {
+  width: 300px;
+  align-self: center;
+}
+
+.profile-right dl dt{
+ float: left;
+ width: 30%;
+ font-weight: 700;
+ padding-bottom: 10px;
+
+}
+.profile-right dl dd{
+ float: right;
+ width: 70%;
+ padding-bottom: 10px;
+
+}
+
+
+    /*------------------------------------------------------------------------
+-------------------画像bg--------------------------------
+------------------------------------------------------------*/
+
+  .middle-bg-01 {
+    background-image: url(../images/middle-bg01.jpg);
+    opacity: 0.9;
+
+  }
+  .middle-bg-02 {
+    background-image: url(../images/middle-bg02.jpg);
+    background-position-x: 60%;
+    background-position-y: 50%;
+    opacity: 0.9;
+
+  }
+
+  .middle-bg-03 {
+    background-image: url(../images/middle-bg03.jpg);
+    opacity: 0.9;
+
+  }
+  
+
+  .skill-contents-right {
+      width: 200px;
+      align-self: center;
+  }
+
+  .middle-bg-01 {
+    color: #FFF;
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+      height: 700px;
+      background-attachment: fixed;
+      background-color: rgba(0, 0, 0, 0.3);
+      background-blend-mode: overlay;
+  }
+  .middle-bg-02 {
+    color: #FFF;
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+      height: 700px;
+      background-attachment: fixed;
+      background-color: rgba(0, 0, 0, 0.3);
+      background-blend-mode: overlay;
+  }
+  .middle-bg-03 {
+    color: #FFF;
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+      height: 700px;
+      background-attachment: fixed;
+      background-color: rgba(0, 0, 0, 0.3);
+      background-blend-mode: overlay;
+  }
+
+
+  .middle-bg-01,  .middle-bg-02, .middle-bg-03 {
+    font-family: 'Great Vibes', cursive;
+    font-family: 'Homemade Apple', cursive;
+    font-family: 'Lobster', cursive;
+    position: relative;
+    font-weight:100;
+    
+   
+    /*レイアウト用のCSS*/
+  }
+  .middle-bg-01::after{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+   
+    /*ここで三角形のサイズを決める。
+    必ず幅100vwにして、ブラウザサイズいっぱいにしてください。*/
+    border-width: 0 0 200px 100vw ;
+   
+    border-color: transparent transparent  transparent #fff;
+  }
+  .middle-bg-01::before{
+    content:"";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+   
+    /*ここで三角形のサイズを決める。
+    必ず幅100vwにして、ブラウザサイズいっぱいにしてください。*/
+    border-width: 0 0 200px 100vw ;
+   
+    border-color: transparent transparent #fff transparent;
+  }
+  .middle-bg-02::after{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+   
+    /*ここで三角形のサイズを決める。
+    必ず幅100vwにして、ブラウザサイズいっぱいにしてください。*/
+    border-width: 0 0 200px 100vw ;
+   
+    border-color: transparent transparent  transparent #fff;
+  }
+  .middle-bg-02::before{
+    content:"";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+   
+    /*ここで三角形のサイズを決める。
+    必ず幅100vwにして、ブラウザサイズいっぱいにしてください。*/
+    border-width: 0 0 200px 100vw ;
+   
+    border-color: transparent transparent #fff transparent;
+  }
+
+  .middle-bg-03 {
+   
+  }
+  .middle-bg-03::after{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+   
+    /*ここで三角形のサイズを決める。
+    必ず幅100vwにして、ブラウザサイズいっぱいにしてください。*/
+    border-width: 0 0 200px 100vw ;
+   
+    border-color: transparent transparent  transparent #fff;
+  }
+  .middle-bg-03::before{
+    content:"";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+   
+    /*ここで三角形のサイズを決める。
+    必ず幅100vwにして、ブラウザサイズいっぱいにしてください。*/
+    border-width: 0 0 200px 100vw ;
+   
+    border-color: transparent transparent #fff transparent;
+  }
+
+
+
+
+  .work {
+    
+  }
+  .work-contents {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+  }
+
+  /* .work-box {
+      width: calc(30% - 3%);
+      height: 250px;
+      margin: 3% 0;
+      background-color: rgba(0, 0, 0, 0.8);
+  
+  } */
+
+  .work-contents {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0;	
+  }
+
+  .work-box {
+    height: 300px;
+    backface-visibility: hidden;
+    position:		relative;
+    overflow:		hidden;
+    margin-bottom: 20px;
+  }
+
+  /*------------------------------------------------------------------------
+-------------------画像のスケール--------------------------------
+------------------------------------------------------------*/
+
+
+.work-box a {
+  display: block;
+  width: 300px;
+  height: 300px;
+  margin: 28px  0 15px;
+  color: #000;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.work-box a  img {
+  width: 300px;
+  height: 300px;
+  transform: scale(1.3);
+  transition: .4s;
+
+}
+
+.work-box a:hover  img {
+  transform: scale(1);
+  opacity: 0.8;
+
+}
+
+/*------------------------------------------------------------------------
+-------------------下から表示--------------------------------
+------------------------------------------------------------*/
+
+.work-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.work-box .work-text-box {
+	font-size:		130%;
+	color:			#fff;
+  text-align: center;
+}
+
+.work-box .work-text  {
+	width:			100%;
+	height:			30%;
+	position:		absolute;
+	bottom: 		-100%;	/* 枠の上に置いて表示させない */
+	left:			0;
+	background-color:	rgba(0,0,0,0.6);
+  transition:		all 0.3s ease;
+
+}
+.work-box:hover .work-text  {
+  bottom:			0px;	/* 下に降りてくるように見せる */
+
+}
+/* .work-box:hover  + .work-box a  img {
+  transform: scale(1)
+
+} */
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------------------
+-----------------ワーク-------------------------------------------
+-------------------------------*/
+
+.work-img-01 {
+  /* background-image: url(../images/work-01.png); */
+  /* background-size: cover; */
+
+}
+/* .work-img-02 {
+  background-image: url(../images/work-02.png);
+  background-size: cover;
+  background-position-x: 30%;
+  background-position-y: ;
+
+} */
+
+
+.blog-contents {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.blog-box {
+  width: calc(30% - 3%);
+  height: 250px;
+  margin: 3% 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/*-------------------------------------------------------------------------------------
+-----------------フォトレタッチ-------------------------------------------
+-------------------------------*/
+.retouch-grid {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.retouch-box {
+  width: 300px;
+  margin-bottom: 100px;
+}
+
+.retouch-box a{
+  margin-bottom: 100px;
+}
+
+
+/*---------------------------------------------------------------------------
+--------------------コンタクト--------------------------
+------------------------*/
+#contact.wrapper {
+  width:35%;
+}
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.Contact-contents .Contact-box {
+  margin: 0 auto
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="phone"],
+textarea {
+  background-color: rgba(255,255, 255, .8);
+  border: 1px solid  #fff;
+  border-radius: 3px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+
+}
+
+textarea {
+  height:10rem;
+}
+
+input[type="submit"] {
+  margin-top: 15px;
+  letter-spacing: 3px;
+  width: 150px;
+  height: 50px;
+  color: #FFF;
+  border:2px solid #fff;
+  background-color: rgba(121, 121, 121, 0.5);
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: 600;
+}
+
+input[type="submit"]:hover {
+  letter-spacing: 6px;
+  background-color:rgba(240, 153, 59, .9);
+
+}
+
+
+ .middle-bg-04{
+  position: relative;
+ 
+  /*レイアウト用のCSS*/
+}
+
+
+.middle-bg-04 {
+background-image: url(../images/middle-bg04.jpg);
+background-color: rgba(0, 0, 0, 0.2);
+background-blend-mode: overlay;
+background-size: cover;
+background-position: bottom;
+opacity: 0.8;
+}
+
+.Contact {
+padding-top: 200px;
+height: 1000px;
+margin: 0 auto;
+}
+.Contact::after{
+content:"";
+position: absolute;
+top: 0;
+left: 0;
+width: 0;
+height: 0;
+border-style: solid;
+
+/*ここで三角形のサイズを決める。
+必ず幅100vwにして、ブラウザサイズいっぱいにしてください。*/
+border-width:   0 0 200px 100vw ;
+
+border-color:  transparent     transparent    transparent  #fff   ;
+}
+
+.back-btn {
+
+
+}
+
+
+
+
+
+/*---------------------------------------------------------------------------
+--------------------フッター--------------------------
+------------------------*/
+
+
+
+footer {
+  color: #fff;
+  text-align: center;
+  height: 200px;
+  background-color: #4b4b4b;
+  padding-top: 60px;
+  position: relative;
+
+  position: relative;
+  z-index: 0;
+}
+footer::after{
+  content: '';
+  position: absolute;
+  left:0;
+  top: 0;
+ 
+  /*四角形を傾けます*/
+  transform: skewY(5deg);
+  transform-origin: bottom right;
+ 
+  z-index: -1;
+  width:100%;
+  height:100%;
+  background: #4b4b4b;
+}
+
+
+.pagetop {
+  font-size: 1.5rem;
+  color: #fff;
+  margin: 0;
+	right: 20px;
+	bottom: 20px;
+	padding: 10px;
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  border-radius: 50%;
+  display: block;
+  opacity: 0.6;
+  text-align: center;transition: all 0.3S;
+  
+ 
+	background-color: rgb(255, 166, 0);
+	display: none;
+}
+.pagetop:hover {
+ opacity: 1;
+ transform: scale(1.2);
+
+}
+
+
+
+
+
+
+/*---------------------------------------------------------------------------
+--------------------スマホ版--------------------------
+------------------------*/
+
+
+
+@media (max-width:700px) {
+.slide img {
+  width: 100%;
+  height: 1000px;
+
+}
+
+  
+.all-h2 {
+  font-size: 40px;
+  text-align: center;
+  padding: 3px 0 50px;
+}
+
+  .main {
+    height: 80%;
+    background-position-x: 50%;
+    background-size: cover;
+  }
+
+  header {
+    width: 100%;
+  }
+
+header ul {
+  flex-direction: column;
+}
+
+header ul li {
+  margin-bottom: 10px;
+}
+
+.skill-box {
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.profile-box {
+flex-direction: column;
+
+}
+
+.profile-left  {
+margin: 0 auto 50px;
+}
+
+.profile-right {
+ margin: 0 auto;
+}
+
+
+
+.work-contents {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+.work-box {
+  margin: 20px auto;
+}
+
+.work-contents {
+  flex-direction: column;
+}
+
+
+.middle-bg-04 {
+ background-position-x: 25%;
+}
+
+#contact.wrapper {
+  width:70%;
+}
+
+.Contact::after{
+  border-width:   0 0 100px 100vw ;
+}
+.Contact::before{
+  border-width:100px  0 0  100vw ;
+ 
+}
+
+footer {
+  height: 50px;
+}
+
+.middle-bg-01 {
+  content: '';
+  height: 100vh;
+  background-position-x: 60%;
+  background-position-y: 50%;
+  height: 400px;
+}
+.middle-bg-02 {
+  content: '';
+  height: 100vh;
+  background-position-x: 40%;
+  background-position-y: 70%;
+  height: 400px;
+}
+.middle-bg-03 {
+  content: '';
+  height: 100vh;
+  background-position-x: 10%;
+  background-position-y:20%;
+  height: 400px;
+}
+
+.middle-bg-01::after{
+
+  border-width: 0 0 100px 100vw ;
+ 
+  border-color: transparent transparent  transparent #fff;
+}
+.middle-bg-01::before{
+
+  border-width: 0 0 100px 100vw ;
+ 
+  border-color: transparent transparent #fff transparent;
+}
+
+
+.middle-bg-02::after{
+
+  border-width: 0 0 100px 100vw ;
+ 
+  border-color: transparent transparent  transparent #fff;
+}
+.middle-bg-02::before{
+
+  border-width: 0 0 100px 100vw ;
+ 
+  border-color: transparent transparent #fff transparent;
+}
+
+.middle-bg-03::after{
+
+  border-width: 0 0 100px 100vw ;
+ 
+  border-color: transparent transparent  transparent #fff;
+}
+.middle-bg-03::before{
+
+  border-width: 0 0 100px 100vw ;
+ 
+  border-color: transparent transparent #fff transparent;
+}
+
+.pagetop {
+  font-size: 0.5rem;
+  color: #fff;
+  margin: 0;
+	right: 10px;
+	bottom: 10px;
+	padding: 10px;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  display: block;
+  opacity: 0.6;
+  text-align: center;transition: all 0.3S;
+  
+ 
+	background-color: rgb(255, 166, 0);
+	display: none;
+}
+.pagetop:hover {
+ opacity: 1;
+ transform: scale(1.2);
+
+}
+
+
+}

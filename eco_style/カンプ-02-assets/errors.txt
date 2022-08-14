@@ -1,0 +1,2 @@
+[2020-10-14 18:38:13] layer "Chat - www.Shapes4FREE.com 1": Expected end of input but "1" found.
+[2020-10-14 18:38:13] layer "Shopping Cart - www.Shapes4FRE1": Expected end of input but "F" found.
