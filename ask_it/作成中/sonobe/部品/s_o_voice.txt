@@ -1,0 +1,113 @@
+============================================================
+voice
+============================================================
+
+------------------------------------------------------------
+HTML
+------------------------------------------------------------
+      <section id="voice">
+        <h2>Voice</h2>
+        <div class="voice_box">
+          <div class="voice_top">
+            <p>IT企業　社長　52歳　女性</p>
+          </div>
+          <div class="voice_before">
+            <p><img src="images/voice_01b.png" width="250" height="250" alt=""/></p>
+          </div>
+          <div class="voice_text">
+            <p>私は小さいころから歯並びが悪く、お年頃になった時に綺麗に歯並びを治してもらいましたが、ある日ピザを食べていたら歯が折れてしまい…あえなくインプラントとなり、前歯４本だけ綺麗に揃うように治療してもらい大満足でした。でも、綺麗にした前歯４本と残っている歯とのバランスが悪く何か変？と思い相談したところ、提案していただいたのがN3Teethです。<br>
+              綺麗にしたいけど、悪くなっていない歯を削るのは抵抗があったので、削らない、痛みもないとの説明を受けて、治療をしていただくことにしました。
+              とても綺麗にお口の中にセットしていただき満足していたら、驚いたことに歯を変えただけなのに…顔までが変わって！最近では会う人に「プチ整形したの？」って言われるほどです。 </p>
+          </div>
+          <div class="voice_after">
+            <p><img src="images/voice_01a.png" width="250" height="250" alt=""/></p>
+          </div>
+        </div>
+        <div class="voice_box">
+          <div class="voice_top">
+            <p>事務職　　30歳　　女性</p>
+          </div>
+          <div class="voice_before">
+            <p><img src="images/voice_02b.png" width="250" height="250" alt=""/></p>
+          </div>
+          <div class="voice_text">
+            <p>私は小さいときに自転車で転んで前歯を損傷…ついでに歯の植わっている骨まで損傷…骨と歯が癒着し、矯正もできない状況になりました。<br>
+              もう歯を削り取り、インプラントしかないと言われていた中、このN3Teethと出会いました。<br>
+              何回か試し合わせをしてもらて満足いくものが仕上がりました。<br>
+              諦めていた自分の歯がなんの苦痛もなくここまで綺麗にしてもらったことで感謝しかありません。<br>
+              N3Teethに出会て本当に良かったです。</p>
+          </div>
+          <div class="voice_after">
+            <p><img src="images/voice_02a.png" width="250" height="250" alt=""/></p>
+          </div>
+        </div>
+        <div class="voice_box">
+          <div class="voice_top">
+            <p>男性　会社員　40歳</p>
+          </div>
+          <div class="voice_before">
+            <p><img src="images/voice_03b.png" width="250" height="250" alt=""/></p>
+          </div>
+          <div class="voice_text">
+            <p>私は生まれつき歯の色が悪く、ホワイトニングをしてもどうしても白くならず削るしかないかと思っていました。<br>
+              その時にこのN3Teethと出会い、藁をもすがる思いでお願いしました。<br>
+              以前は歯を隠そう隠そうとして大きく笑えませんでしたが、今では大口を開けてわらうことができるようになりました。<br>
+              よく笑うようになったからか、顔が優しくなったと言われます。<br>
+              本当にありがとうございました。 </p>
+          </div>
+          <div class="voice_after">
+            <p><img src="images/voice_03a.png" width="250" height="250" alt=""/></p>
+          </div>
+        </div>
+        <div class="voice_box">
+          <div class="voice_top">
+            <p>男性　営業職　　23歳</p>
+          </div>
+          <div class="voice_before">
+            <p><img src="images/voice_04b.png" width="250" height="250" alt=""/></p>
+          </div>
+          <div class="voice_text">
+            <p>歯の隙間がずっとコンプレックスでした。<br>
+              矯正も考えましたが、長い期間がかかることが嫌で敬遠していました。<br>
+              知り合いにこういうのがあるよと教えてもらいカウンセリングを受け、シミュレーションしてもらいました。<br>
+              歯の隙間がなくなるだけでこんなにも顔が違うのかとビックリ！<br>
+              そしてせっかくなので今の自分の歯よりも白くしてもらいました。<br>
+              ちょっと白すぎたかな…と思いましたが、営業先で「歯がきれいだね」と言われるようになり、とても満足しています。<br>
+              自分の彼女も今度治療してもらう予定です！<br>
+              二人そろって綺麗な歯になるのが楽しみです。 </p>
+          </div>
+          <div class="voice_after">
+            <p><img src="images/voice_04a.png" width="250" height="250" alt=""/></p>
+          </div>
+        </div>
+      </section>
+------------------------------------------------------------
+CSS
+------------------------------------------------------------
+/* ------------------------------
+   voice <section>
+   ------------------------------ */
+.voice_box {
+  width: 1000px;
+  height: 450px;
+  margin: 0 auto;
+  clear: both;
+  padding-bottom: 50px;
+}
+.voice_top {
+    width: 440px;
+    margin-left: 280px;
+}
+.voice_before {
+    float: left;
+    margin-right: 30px;
+}
+.voice_text {
+    width: 440px;
+    float: left;
+    margin-right: 30px;
+}
+.voice_after {
+  float: left;
+  margin-top: 175px;
+}

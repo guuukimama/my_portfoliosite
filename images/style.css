@@ -1,0 +1,472 @@
+@charset "utf-8";
+
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+
+
+/*-----------------------------------------
+----------ここからコード-----------------
+-----------------------------------------*/
+
+body {
+    background-color: #E6E6E6;
+    height: 2000px;
+    
+}
+
+h3 {
+    font-size: 24px;
+    margin: 50px 0 ;
+}
+
+p {
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.middle {
+    width: 1440px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+
+
+.main-img {
+      /* 画面いっぱいに背景画像を貼り付ける */
+  background: url(./images/main1.jpg) no-repeat center;
+  background-size: cover;
+  position: relative;
+  height:600px;
+  display: flex;
+  }
+.main-img::before{
+    /* 透過した黒を上から重ねるイメージ */
+    background-color: rgba(110,110,110,0.3);
+    /* 自由に位置指定 */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: ' ';
+  }
+
+  .all-vg {
+      display: flex;
+  }
+
+
+  .main-contents{
+      text-align: center;
+      margin: 0 auto;
+      position: relative;
+      top: calc(50% - 120px);
+      color: white;
+      line-height: 30px;
+  }
+
+  .main-contents h2 {
+    font-family: kozuka-mincho-pro, serif;
+
+font-weight: 400;
+
+font-style: normal;
+  }
+
+  .all-concept {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto;
+      width: 1040px;
+      text-align: center;
+  }
+
+  .all-concept-innner {
+      /* width: 50%; */
+      /* height: 300px;
+      margin: 200px 100px; */
+      width: 500px;
+    height: 300px;
+    margin: 200px 50px;
+      box-shadow: 0px 5px 5px -5px rgb(0 0 0 / 20%);
+      padding: 0 0 200px;
+  }
+
+  .all-concept-innner h3 {
+      margin: 40px auto 30px;
+  }
+
+  .all-concept-innner p {
+      width: 80%;
+      margin: 30px auto 50px;
+      text-align: left;
+  }
+
+  .main-contents {
+      height: 300px;
+  }
+  
+  .introduction {
+      margin-bottom: 100px;
+  }
+
+  .concept02 {
+      width: 86px;
+  }
+
+
+
+   .concept02-1  {
+       margin: 50px 0 0;
+       transform: rotate(-85deg);
+   }
+
+
+
+   .introduction p {
+       width: 800px;
+       margin: 0 auto;
+       text-align: left;
+
+   }
+
+   .menu01 {
+    background: url(./images/wood-01.jpg) no-repeat center;
+    background-size: cover;
+    /* position: relative; */
+    height:500px;
+    display: flex;
+    align-items: center;
+  }
+  .menu02 {
+    background: url(./images/wood-02.jpg) no-repeat center;
+    background-size: cover;
+    /* position: relative; */
+    height:500px;
+    display: flex;
+    align-items: center;
+    
+  }
+
+  .menu02 p {
+      font-size: small;
+      margin: -20px 0 20px;
+  }
+
+
+  .menu-contents {
+      background-color: rgba(255,255,255,0.8);
+      width: 650px;
+      height: 350px;
+      margin: 0 auto;
+      /* justify-content: center;
+      align-content: center; */
+
+      /* position: absolute; */
+    
+  }
+
+  .menu-contents  table {
+    line-height: 30px;
+    margin: 0 auto;
+    text-align: left;
+    width: 250px;
+  }
+
+
+  table tr {
+      margin-bottom: 30px;
+  }
+
+  .store-info  {
+      margin-bottom: 80px;
+  }
+
+  .info {
+      display: flex;
+     justify-content: center;
+     /* margin-top: 80px; */
+  }
+
+  .info-text h5 {
+    font-family: kozuka-mincho-pro, serif;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .info-border {
+      height: 300px;
+      border-right: 1px solid rgba(112, 112, 112, 0.3);
+  }
+
+  .concept-img {
+      width: 350px;
+  }
+
+  .info-text {
+      width:400px;
+      text-align: left;
+      margin-left: -50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .info-text dl dt {
+      font-size: 20px;
+      font-weight: bold;
+      /* line-height: 24px; */
+      margin: 15px 0 10px;
+  }
+  .info-text dl dd {
+    font-size: 16px;
+    line-height: 20px;
+
+  }
+
+  .map {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    }
+    .map iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 50%;
+    width: 100%;
+    }
+
+  iframe {
+      /* margin-bottom: 100px; */
+  }
+
+  .information {
+      margin-bottom: 200px;
+  }
+
+  .information-reserve{
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 30px;
+
+  }
+
+  .phone-nb {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
+
+   .information img {
+      width: 50px;
+  }
+
+  .insta-text {
+      font-size: 19px;
+      font-weight: bold;
+      color: rgba(213,0,92,0.3);
+      font-family: kozuka-mincho-pro, serif;
+  }
+
+  footer {
+      background-color: rgba(110,110,110,0.3);
+      height: 120px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: small;
+      color: white;
+  }
+
+
+
+
+  @media (max-width: 600px) {
+
+    .concept  {
+        width: 80%;
+    }
+
+    /* .concept01 {
+        width: 50%;
+    } */
+
+    .all-concept-innner {
+        width: 100%;
+        margin: 100px auto 0;
+        padding: none;
+
+    }
+
+    .all-concept {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto 100px;
+        width: 1040px;
+        text-align: center;
+    }
+
+
+    .all-concept-innner {
+        box-shadow: none;
+    }
+
+    .introduction p {
+        width: 100%;
+    }
+    .middle {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .all-concept {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .concept02 {
+        width: 20%;
+    }
+
+    .introduction p {
+        width: 80%;
+    }
+
+    .concept-img {
+        width: 80%;
+    }
+
+    .info-text {
+        width: 50%;
+        margin-left: 10px;
+    }
+
+    .info-text:nth-child(1) {
+        width: 50%;
+        text-align: center;
+    }
+
+    .info-text dl dt {
+        font-size: 16px;
+    }
+
+    .map iframe {
+        height: 100%;
+        margin-bottom: 100px;
+
+        }
+
+        .map {
+            margin-bottom: 100px;
+        }
+
+  }

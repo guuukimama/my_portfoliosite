@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>映像制作会社のページ</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="css/lightbox.min.css" rel="stylesheet" type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
+	<script>
+		$(function () {
+			$(".slide").carouFredSel({
+				scroll: {
+					fx: "fade"
+				},
+				pagination: {
+					container: ".slide-pg"
+				}
+			});
+			// アレンジメニューカルーセル
+			$(".asaid_images").carouFredSel({
+				scroll: {
+					items: 1,
+					easing: "linear",
+					duration: 5000,
+				},
+				auto: {
+					timeoutDuration: 0,
+				},
+				items: {
+					visible: 7,
+				}
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div class="inner">
+		　<div class="main">
+			<video playsinline autoplay muted loop>
+				<source src="move/final.mp4" type="video/mp4">
+				<source src="video/bg.mp4" type="videomp4">
+			</video>
+			<div class="bg-white">
+				<h1>possibility</h1>
+				<p>keep yourself alive... </p>
+			</div>
+		</div>
+		<nav class="side">
+			<h1><a href="index.html" class="logo_link"><img src="img/logo.png" class="logo" alt="撮影している写真"
+						title="videp"></a></h1>
+			<ul class="sticky">
+				<li><a href="video.html" class="link">video</a></li>
+				<li><a href="photograph.html" class="link">photograph</a></li>
+				<li class="sp-shooting"><a href="Smartphoneshooting.html" class="link">Smartphone<br>shooting</a></li>
+			</ul>
+		</nav>
+
+		<main>
+			<article>
+				<section id="video">
+					<div class="video_inner">
+						<h2><a href="video.html" class="link_video">video</a></h2>
+						<p><img src="img/index_01.png" alt="撮影している写真" title="videp"></p>
+					</div>
+					<div class="video_inner">
+						<p><img src="img/index_02.png" alt="カメラを持ってている写真" title="videp"></p>
+						<h2><a href="photograph.html" class="link_video">photograph</a></h2>
+					</div>
+					<div class="video_inner">
+						<h2><a href="Smartphoneshooting.html" class="link_video">Smartphone<br>shooting</a></h2>
+						<p><img src="img/index_03.png" alt="スマートフォンで撮影している写真" title="videp"></p>
+					</div>
+
+				</section>
+				<section id="asaid">
+					<div class="asaid_images">
+						<p><a href="img/big-01.jpg" data-lightbox="a" data-title="撮影風景"><img src="img/index_01.png" alt="" /></a></p>
+						<p><a href="img/big-02.jpg" data-lightbox="a" data-title="写真をとってる人"><img src="img/index_02.png" alt="" /></a></p>
+						<p><a href="img/big-03.jpg" data-lightbox="a" data-title="カメラを手に持っている人"><img src="img/index_03.png"alt="" /></a></p>
+						<p><a href="img/big-04.jpg" data-lightbox="a" data-title="花火"><img src="img/index_04.png"alt="" /></a></p>
+						<p><a href="img/big-05.jpg" data-lightbox="a" data-title="女性"><img src="img/index_05.png"alt="" /></a></p>
+						<p><a href="img/big-06.jpg" data-lightbox="a" data-title="外を見渡す男性"><img src="img/index_06.png"alt="" /></a></p>
+						<p><a href="img/big-07.jpg" data-lightbox="a" data-title="切り株に乗った女性"><img src="img/index_07.png"alt="" /></a></p>
+						<p><a href="img/big-08.jpg" data-lightbox="a" data-title="煙草を吸っている男性"><img src="img/index_08.png"alt="" /></a></p>
+						
+						<!-- <p><img src="img/index_05.png" width="200" height="200" alt="撮影している写真" title="videp"></p>
+						<p><img src="img/index_06.png" width="200" height="200" alt="撮影している写真" title="videp"></p>
+						<p><img src="img/index_07.png" width="200" height="200" alt="撮影している写真" title="videp"></p>
+						<p><img src="img/index_08.png" width="200" height="200" alt="撮影している写真" title="videp"></p>
+						<p><img src="img/index_04.png" width="200" height="200" alt="撮影している写真" title="videp"></p>
+						<p><img src="img/index_05.png" width="200" height="200" alt="撮影している写真" title="videp"></p>
+						<p><img src="img/index_06.png" width="200" height="200" alt="撮影している写真" title="videp"></p>
+						<p><img src="img/index_07.png" width="200" height="200" alt="撮影している写真" title="videp"></p>
+						<p><img src="img/index_08.png" width="200" height="200" alt="撮影している写真" title="videp"></p> -->
+					</div>
+				</section>
+			</article>
+
+		</main>
+		<footer>
+			<div class="footer_box">
+				<p>Copyright&copy;.All Rights Reserved.</p>
+			</div>
+		</footer>
+
+		<script type="text/javascript" src="js/lightbox.min.js"></script>
+	<script>
+		asaid.option({
+			albumLabel: "%2枚中の%1枚目",
+			fadeDuration: 600,
+			imageFadeDuration: 600,
+			resizeDuration: 700,
+			positionFromTop: 50,
+			showImageNumberLabel: false,
+			wrapAround: true
+
+		})	
+	</script>
+	</div>
+
+</body>
+
+</html>

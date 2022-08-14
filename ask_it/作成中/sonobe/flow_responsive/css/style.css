@@ -1,0 +1,657 @@
+@charset "utf-8";
+body, p, h1, h2, h3, ul {
+  padding: 0;
+  margin: 0;
+}
+img {
+  border: none;
+  vertical-align: middle;
+}
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 1.8;
+}
+.inner {
+  margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 0;
+  width: 1200px;
+}
+.inner h2 {
+  margin: 50px 0 50px;
+  text-align: center;
+}
+/* ------------------------------
+   header
+   ------------------------------ */
+header {
+    background-image: url(../images/bg.png);
+    height: 280px;
+    background-repeat: repeat;
+}
+header .inner {
+  position: relative;
+}
+header h1 {
+  position: absolute;
+  left: 0px;
+}
+/* ------------------------------
+   nav
+   ------------------------------ */
+nav {
+  margin-left: 300px;
+}
+nav ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+nav li {
+  float: left;
+}
+/* ------------------------------
+   main
+   ------------------------------ */
+main {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+h2 {
+  color: #707070;
+  font-size: 3.5em;
+  text-align: center;
+}
+/* ------------------------------
+   footer
+   ------------------------------ */
+footer {
+  height: 300px;
+  background-color: #50214A;
+}
+footer p {
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 50px;
+}
+/* ------------------------------
+   n3t
+   ------------------------------ */
+.n3t .box {
+	width: 550px;
+	margin: 0 auto;
+	text-align: center;
+	clear: both;
+}
+.box p img {
+}
+.n3t .box .text {
+	text-align: left;
+}
+.n3t .box h3 {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.n3t .before  {
+	padding: 0 auto;
+	width: 500px;
+	text-align: center;
+	float: left;
+}
+.n3t .images  {
+	margin: 50px auto;
+	width: 1000px;
+}
+.n3t .images .img {
+	width: 240px;
+	text-align: center;
+	float: left;
+}
+.n3t .img p {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+/* ------------------------------
+   flow
+   ------------------------------ */
+.flow_box  {
+    border-radius: 50px;
+    border: 1px solid #707070;
+    width: 1000px;
+    height: 100px;
+    background-color: rgba(197, 164, 63, 0.43);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+}
+.flow_next {
+    text-align: center;
+    margin-bottom: 10px;
+}
+/* ------------------------------
+   price
+   ------------------------------ */
+.price h3 {
+	margin: 0 auto;
+	width: 1000px;
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.price .text {
+	text-align: center;
+	margin-top: 50px;
+}
+
+.price table {
+	margin: 0 auto;
+	width: 1000px;
+	border-collapse: collapse;
+	border: medium solid #707070;
+}
+.price table tbody th ,.price table tbody td{
+	border: 1px solid #707070;
+}
+.price table .n3t {
+	border: none;
+}
+/* ------------------------------
+   qa
+   ------------------------------ */
+dl {
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 0;
+  width: 1000px;
+}
+dl dt {
+    border-radius: 55px;
+    border: 1px solid #707070;
+    width: 1000px;
+    height: 100px;
+    background-color: rgba(80, 33, 74, 0.50);
+    margin-bottom: 1em;
+}
+dt p {
+    color: #FFFFFF;
+    padding: 30px;
+}
+dl dd {
+    border-radius: 55px;
+    border: 1px solid #707070;
+    width: 1000px;
+    height: 100px;
+    background-color: rgba(197, 164, 63, 0.43);
+    margin-bottom: 5em;
+    margin-left: 0px;
+}
+dd p {
+    color: #707070;
+    padding: 30px;
+}
+/* ------------------------------
+   case
+   ------------------------------ */
+.case_box {
+    width: 1000px;
+    height: 450px;
+    margin: 0 auto;
+    clear: both;
+    padding-bottom: 50px;
+}
+.case_top p {
+    width: 440px;
+    margin-left: 280px;
+}
+.case_before {
+    background-color: #FF0000;
+    width: 250px;
+    height: 250px;
+    float: left;
+    margin-right: 30px;
+}
+.case_text {
+    width: 440px;
+    float: left;
+    margin-right: 30px;
+}
+.case_after {
+    width: 250px;
+    background-color: #FF0000;
+    height: 250px;
+    float: left;
+    margin-top: 175px;
+}
+/* ------------------------------
+   clinic
+   ------------------------------ */
+.table_01 {
+    margin-left: 350px;
+    margin-bottom: 50px;
+    width: 800px;
+}
+.table_01 th {
+    text-align: left;
+}
+.table_02 {
+    width: 150px;
+    float: left;
+    height: 200px;
+}
+.table_02 th {
+    text-align: left;
+    margin-bottom: 50px;
+    height: 50px;
+}
+.table_02 tr {
+    height: 50px;
+}
+.table_03 {
+    float: left;
+    text-align: center;
+    height: 200px;
+    border-collapse: collapse;
+    width: 576px;
+}
+.table_03 th  {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    width: 100px;
+}
+.table_03 td {
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+.map {
+    width: 700px;
+    height: 500px;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+.clinic h3 {
+    margin: 50px 0 50px;
+    text-align: center;
+    font-size: 30px;
+}
+.clinic h4 {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+.clinic table {
+    margin: 0 auto;
+    width: 500px;
+}
+.time {
+    display: flex;
+    justify-content: center;
+}
+.clinic  {
+    margin-bottom: 80px;
+}
+@media (max-width:750px){
+	.inner {
+	width: 100%;
+}
+header .inner {
+	width: 100%;
+}
+header h1 img {
+	width: 150px;
+	height: 150px;
+}
+
+header {
+	height: 132px;
+}
+	
+
+/* bager menu */
+  
+#header #navi {
+  transition: all .6s;
+  overflow-y: auto;
+  padding-top: 40px;
+  width: 300px;
+  height: 100vh;
+  z-index: 200;
+  top: 0;
+  right: -320px;
+  background-color: #fff;
+  position: fixed;
+}
+ 
+#header .nav_btn {
+  width: 44px;
+  height: 44px;
+  z-index: 300;
+  top: 0px;
+  right: 0px;
+  cursor: pointer;
+  position: fixed;
+  background-color: #50214a9d;
+}
+ 
+.hamburger_line {
+  transition: all .6s;
+  width: 34px;
+  height: 2px;
+  right: 5px;
+  background-color: #c5a43f;
+  position: fixed;
+}
+ 
+.hamburger_line1 { top: 8px; }
+.hamburger_line2 { top: 21px; }
+.hamburger_line3 { top: 32px; }
+ 
+.nav_bg {
+  opacity: 0;
+  transition: all .6s;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  background-color: #000;
+  cursor: pointer;
+  position: fixed;
+}
+ 
+/* 表示された時用のCSS */
+.nav_open #header #navi { right: 0; }
+ 
+.nav_open .nav_bg {
+  opacity: .8;
+  visibility: visible;
+}
+ 
+.nav_open .hamburger_line1 {
+  transform: rotate(45deg);
+  top: 20px;
+}
+ 
+.nav_open .hamburger_line2 {
+  width: 0;
+  right: 50%;
+}
+ 
+.nav_open .hamburger_line3 {
+  transform: rotate(-45deg);
+  top: 20px;
+}
+.pc_nav{
+	display: none;
+}
+#navi li{
+	float: none;
+	font-size: 2.5em;
+  text-align: center;
+}
+#navi a{
+	text-decoration: none;
+	color: #50214A;
+}
+#navi a:hover{
+	color:#c5a43f;
+}
+.price h3  {
+    margin: 0 auto;
+    width: 100vw;
+}
+.n3t {
+    width: 100%;
+}
+.n3t br {
+    display: inherit;
+}
+
+.tb {
+    width: 1000px;
+}
+
+.price .tb {
+    width: 100%;
+
+
+
+}
+.tb th {
+    width: auto;
+
+}
+.td td {
+    width: auto;
+
+}
+.n3t_2  {
+    width: 100%;
+}
+.n3t_2 th {
+    width: auto;
+}
+.inner dl  {
+    width: 100%;
+}
+.inner dt {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 130px;
+}
+.inner dd {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 130px;
+}
+
+
+
+
+
+
+
+
+
+
+}
+@media (min-width:751px){
+	#navi{
+		display: none;
+	}
+
+}
+@media (max-width:750px){
+	.inner {
+	width: 100%;
+}
+header .inner {
+	width: 100%;
+}
+header h1 img {
+	width: 150px;
+	height: 150px;
+}
+
+header {
+	height: 132px;
+}
+	
+
+/* bager menu */
+  
+#header #navi {
+  transition: all .6s;
+  overflow-y: auto;
+  padding-top: 40px;
+  width: 300px;
+  height: 100vh;
+  z-index: 200;
+  top: 0;
+  right: -320px;
+  background-color: #fff;
+  position: fixed;
+}
+ 
+#header .nav_btn {
+  width: 44px;
+  height: 44px;
+  z-index: 300;
+  top: 0px;
+  right: 0px;
+  cursor: pointer;
+  position: fixed;
+  background-color: #50214a9d;
+}
+ 
+.hamburger_line {
+  transition: all .6s;
+  width: 34px;
+  height: 2px;
+  right: 5px;
+  background-color: #c5a43f;
+  position: fixed;
+}
+ 
+.hamburger_line1 { top: 8px; }
+.hamburger_line2 { top: 21px; }
+.hamburger_line3 { top: 32px; }
+ 
+.nav_bg {
+  opacity: 0;
+  transition: all .6s;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  background-color: #000;
+  cursor: pointer;
+  position: fixed;
+}
+ 
+/* 表示された時用のCSS */
+.nav_open #header #navi { right: 0; }
+ 
+.nav_open .nav_bg {
+  opacity: .8;
+  visibility: visible;
+}
+ 
+.nav_open .hamburger_line1 {
+  transform: rotate(45deg);
+  top: 20px;
+}
+ 
+.nav_open .hamburger_line2 {
+  width: 0;
+  right: 50%;
+}
+ 
+.nav_open .hamburger_line3 {
+  transform: rotate(-45deg);
+  top: 20px;
+}
+.pc_nav{
+	display: none;
+}
+#navi li{
+	float: none;
+	font-size: 2.5em;
+  text-align: center;
+}
+#navi a{
+	text-decoration: none;
+	color: #50214A;
+}
+#navi a:hover{
+	color:#c5a43f;
+}
+.price h3  {
+    margin: 0 auto;
+    width: 100vw;
+}
+.n3t {
+    width: 100%;
+}
+.n3t br {
+    display: inherit;
+}
+
+.tb {
+    width: 1000px;
+}
+
+.price .tb {
+    width: 100%;
+
+
+
+}
+.tb th {
+    width: auto;
+
+}
+.td td {
+    width: auto;
+
+}
+.n3t_2  {
+    width: 100%;
+}
+.n3t_2 th {
+    width: auto;
+}
+.inner dl {
+    width: 100%;
+    height: auto;
+}
+.inner dt {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+}
+.inner dd  {
+    width: auto;
+    height: 120px;
+    display: flex;
+    align-items: center;
+}
+.flow_box {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+}
+@media (min-width:751px){
+	#navi{
+		display: none;
+	}
+
+}

@@ -1,0 +1,75 @@
+============================================================
+step
+============================================================
+
+------------------------------------------------------------
+HTML
+------------------------------------------------------------
+    <section id="step">
+      <h2>Step</h2>
+      <div class="step_box">
+        <h3>step1</h3>
+          <p>ご来院にてN3Teethの問診、ご説明をさせていただきます。<br>
+          ご納得いただければ、精密カウンセリング用に歯の型、お写真を撮らせていただきます。</p>
+      </div>
+      <div class="step_next">
+        <p><img src="images/step_01.png" width="43" height="38" alt="次へ"/></p>
+      </div>
+      <div class="step_box">
+        <h3>Step 2</h3>
+          <p>ゴールデンプロポーションを用いた、歯は顔の一部という考えのもとに<br>
+          個人個人に合わせた歯並びを構築する精密カウンセリングを行います。</p>
+      </div>
+      <div class="step_next">
+        <p><img src="images/step_01.png" width="43" height="38" alt="次へ"/></p>
+      </div>
+      <div class="step_box">
+        <h3>Step 3</h3>
+          <p>ご納得いただければお口の中のチェック、及びクリーニングをし、N3Teeth製作用の歯の型を採り<br>
+          N3Teethの製作に入ります。※尚、虫歯等が発見された場合は先に歯科治療となります。</p>
+      </div>
+      <div class="step_next">
+        <p><img src="images/step_01.png" width="43" height="38" alt="次へ"/></p>
+      </div>
+      <div class="step_box">
+        <h3>Step 4</h3>
+          <p>一度仮合わせをいたします。仮合わせの為の来院は、状況に応じて省くことも可能です。</p>
+      </div>
+      <div class="step_next">
+        <p><img src="images/step_01.png" width="43" height="38" alt="次へ"/></p>
+      </div>
+      <div class="step_box">
+        <h3>Step 5</h3>
+          <p>出来上がったＮ３Ｔｅｅｔｈをセットしていきます。</p>
+      </div>
+      <div class="step_next">
+        <p><img src="images/step_01.png" width="43" height="38" alt="次へ"/></p>
+      </div>
+      <div class="step_box">
+        <h3>Step 6</h3>
+          <p>３～４か月に一度メンテナンスでご来院ください。<br>
+          (年1回プロフェッショナルメンテナンス10,000円 & 年２回保険クリーニング3,000円前後) </p>
+      </div>
+    </section>
+------------------------------------------------------------
+CSS
+------------------------------------------------------------
+/* ------------------------------
+   step <section>
+   ------------------------------ */
+.step_box {
+  border-radius: 50px;
+  border: 1px solid #707070;
+  width: 80%;
+  height: 100px;
+  background-color: rgba(197, 164, 63, 0.43);
+  padding: 10px;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 10px;
+}
+.step_next {
+  text-align: center;
+  margin-bottom: 10px;
+}

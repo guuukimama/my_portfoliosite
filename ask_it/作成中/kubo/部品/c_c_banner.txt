@@ -1,0 +1,33 @@
+============================================================
+banner
+============================================================
+
+------------------------------------------------------------
+HTML
+------------------------------------------------------------
+    <section id="banner">
+      <div class="banner_box clearfix">
+        <p><img src="images/banner_01.png" width="200" height="148" alt=""/></p>
+        <p><img src="images/banner_02.png" width="200" height="148" alt=""/></p>
+        <p><img src="images/banner_03.png" width="200" height="148" alt=""/></p>
+        <p><img src="images/banner_04.png" width="200" height="148" alt=""/></p>
+        <p><img src="images/banner_05.png" width="200" height="148" alt=""/></p>
+        <p><img src="images/banner_06.png" width="200" height="148" alt=""/></p>
+      </div>
+    </section>
+------------------------------------------------------------
+CSS
+------------------------------------------------------------
+/* ------------------------------
+   banner <section>
+   ------------------------------ */
+.banner_box {
+  width: 720px;
+  margin: 0 auto;
+}
+.banner_box p {
+  float: left;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}

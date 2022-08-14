@@ -1,0 +1,179 @@
+============================================================
+header logo nav
+============================================================
+
+------------------------------------------------------------
+HTML
+------------------------------------------------------------
+<!-- top -->
+  <header>
+    <div class="header_top">
+      <div class="inner">
+        <h1><a href="index.html"><p><img src="images/logo.png" width="300" height="300" alt="N3Teeth"/></p></a></h1>
+        <nav class="nav">
+          <ul>
+            <li class="btn01"><a href="n3t.html"><p><img src="images/btn_1.png" width="150" height="61" alt="N3Teethについて"/></p></a></li>
+            <li class="btn02"><a href="voice.html"><p><img src="images/btn_2.png" width="150" height="61" alt="患者様の声"/></p></a></li>
+            <li class="btn03"><a href="step.html"><p><img src="images/btn_3.png" width="150" height="61" alt="施術の流れ"/></p></a></li>
+            <li class="btn04"><a href="price.html"><p><img src="images/btn_4.png" width="150" height="61" alt="料金について"/></p></a></li>
+            <li class="btn05"><a href="qa.html"><p><img src="images/btn_5.png" width="150" height="61" alt="よくあるご質問"/></p></a></li>
+            <li class="btn06"><a href="clinic.html"><p><img src="images/btn_6.png" width="150" height="61" alt="当院について"/></p></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+------------------------------------------------------------
+<!-- sub -->
+  <header>
+    <div class="header_sub">
+      <div class="inner">
+        <h1><a href="index.html"><p><img src="images/logo.png" width="300" height="300" alt="N3Teeth"/></p></a></h1>
+        <nav class="nav">
+          <ul>
+            <li class="btn01"><a href="n3t.html"><p><img src="images/btn_1.png" width="150" height="61" alt="N3Teethについて"/></p></a></li>
+            <li class="btn02"><a href="voice.html"><p><img src="images/btn_2.png" width="150" height="61" alt="患者様の声"/></p></a></li>
+            <li class="btn03"><a href="step.html"><p><img src="images/btn_3.png" width="150" height="61" alt="施術の流れ"/></p></a></li>
+            <li class="btn04"><a href="price.html"><p><img src="images/btn_4.png" width="150" height="61" alt="料金について"/></p></a></li>
+            <li class="btn05"><a href="qa.html"><p><img src="images/btn_5.png" width="150" height="61" alt="よくあるご質問"/></p></a></li>
+            <li class="btn06"><a href="clinic.html"><p><img src="images/btn_6.png" width="150" height="61" alt="当院について"/></p></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+------------------------------------------------------------
+CSS
+------------------------------------------------------------
+/* ------------------------------
+   header
+   ------------------------------ */
+/* top */
+.header_top {
+  width: 100%;
+  position: absolute;
+  z-index: 100;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.header_top h1 {
+  float: left;
+}
+/* sub */
+.header_sub {
+  background-image: url(../images/bg.png);
+  height: 200px;
+  background-repeat: repeat;
+  width: 100%;
+}
+header .inner {
+  position: relative;
+  width: 1200px;
+}
+.header_sub h1 {
+  position: absolute;
+  left: 0px;
+}
+/* ------------------------------
+   nav
+   ------------------------------ */
+nav {
+  margin-left: 300px;
+}
+nav ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+nav li {
+  float: left;
+}
+/* btn01 */
+.btn01{
+    background: url("../images/btn_1_on.png") no-repeat;
+    width: 150px;
+    height: 61px;
+}
+.btn01 a {
+    display: inline-block;
+} 
+.btn01 a:hover {
+	background-color: transparent; /* IE6対応 */
+} 
+.btn01 a:hover img {
+    visibility: hidden;
+}
+/* btn02 */
+.btn02{
+    background: url("../images/btn_2_on.png") no-repeat;
+    width: 150px;
+    height: 61px;
+}
+.btn02 a {
+    display: inline-block;
+} 
+.btn02 a:hover {
+	background-color: transparent; /* IE6対応 */
+} 
+.btn02 a:hover img {
+    visibility: hidden;
+}
+/* btn03 */
+.btn03{
+    background: url("../images/btn_3_on.png") no-repeat;
+    width: 150px;
+    height: 61px;
+}
+.btn03 a {
+    display: inline-block;
+} 
+.btn03 a:hover {
+	background-color: transparent; /* IE6対応 */
+} 
+.btn03 a:hover img {
+    visibility: hidden;
+}
+/* btn04 */
+.btn04{
+    background: url("../images/btn_4_on.png") no-repeat;
+    width: 150px;
+    height: 61px;
+}
+.btn04 a {
+    display: inline-block;
+} 
+.btn04 a:hover {
+	background-color: transparent; /* IE6対応 */
+} 
+.btn04 a:hover img {
+    visibility: hidden;
+}
+/* btn05 */
+.btn05{
+    background: url("../images/btn_5_on.png") no-repeat;
+    width: 150px;
+    height: 61px;
+}
+.btn05 a {
+    display: inline-block;
+} 
+.btn05 a:hover {
+	background-color: transparent; /* IE6対応 */
+} 
+.btn05 a:hover img {
+    visibility: hidden;
+}
+/* btn06 */
+.btn06{
+    background: url("../images/btn_6_on.png") no-repeat;
+    width: 150px;
+    height: 61px;
+}
+.btn06 a {
+    display: inline-block;
+} 
+.btn06 a:hover {
+	background-color: transparent; /* IE6対応 */
+} 
+.btn06 a:hover img {
+    visibility: hidden;
+}

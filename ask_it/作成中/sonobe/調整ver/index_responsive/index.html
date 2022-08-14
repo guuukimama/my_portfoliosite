@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>N3Teeth</title>
+<script type="text/javascript" src="js/jquery-3.5.1.min.js"></script> 
+<script type="text/javascript" src="js/jquery.carouFredSel-6.2.1-packed.js"></script> 
+<script>
+$(function(){
+	$(".slide").carouFredSel({
+		circular: true,
+		direction: "left",
+		scroll:{
+			duration: 1000,
+			fx: "scroll",
+			easing: "swing",
+			items: 1
+		},
+		auto:{
+			play: true,
+			timeoutDuration: 2500,
+			pauseOnHover: false
+		},
+		items:{
+			visible:1,
+			start:0
+		},
+	});
+});
+</script>
+<link href="css/topstyle.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+<header>
+  <div class="inner">
+    <h1><img src="images/logo.png" width="300" height="300" alt="N3Teeth"/></h1>
+    <nav class="nav">
+      <ul>
+        <li><a href="#"><img src="images/btn_1.png" width="150" height="61" alt="N3Teethについて"/></a></li>
+        <li><a href="#"><img src="images/btn_2.png" width="150" height="61" alt="施術について"/></a></li>
+        <li><a href="#"><img src="images/btn_3.png" width="150" height="61" alt="施術の流れ"/></a></li>
+        <li><a href="#"><img src="images/btn_4.png" width="150" height="61" alt="料金について"/></a></li>
+        <li><a href="#"><img src="images/btn_5.png" width="150" height="61" alt="よくあるご質問"/></a></li>
+        <li><a href="#"><img src="images/btn_6.png" width="150" height="61" alt="当院について"/></a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main>
+  <div class="inner">
+    <section id="mainimage">
+      <div class="slide">
+        <p><img src="images/carousel01.png" width="1200" height="790" alt="No ダメージ"/></p>
+        <p><img src="images/carousel02.png" width="1200" height="790" alt="No ペイン"/></p>
+        <p><img src="images/carousel03.png" width="1200" height="790" alt="No コンプレックス"/></p>
+      </div>
+    </section>
+    <section ID="story">
+      <h2>STORY's</h2>
+      <div class="story_box01">
+        <div class="element js-animation story_text01">
+          <h3>綺麗な歯、だけでいいの？</h3>
+          <p>痛い、時間がかかる、何度も通うのは辛い。<br>
+            そんなわずらわしさから解き放たれて、<br>
+            口元から幸せを読び込むことができたとしたら。<br>
+            自信のある口元で、<br>
+            内面の美しさそのものに笑うことができたなら。</p>
+        </div>
+        <div class="element js-animation story_img01">
+          <p><img src="images/story01.png" width="532" height="576" alt="頬に手を当てて"/></p>
+        </div>
+        <div class="element js-animation story_img02">
+          <p><img src="images/story02.png" width="258" height="258" alt="ラベンダー"/></p>
+        </div>
+        <div class="element js-animation story_img03">
+          <p><img src="images/story03.png" width="338" height="338" alt=""/></p>
+        </div>
+      </div>
+      <div class="story_box02">
+        <div class="element js-animation story_img04">
+          <p><img src="images/story04.png" width="532" height="576" alt=""/></p>
+        </div>
+        <div class="element js-animation story_img05">
+          <p><img src="images/story05.png" width="281" height="281" alt=""/></p>
+        </div>
+        <div class="element js-animation story_text02">
+          <h3>歯が変わると、骨格が変わる。</h3>
+          <h3>骨格が変わると、笑顔が変わる。</h3>
+        </div>
+      </div>
+      <div class="story_box03">
+        <div class="element js-animation story_text03">
+          <p>「歯は顔の一部」という考えのもと、<br>
+            ゴールデンプロポーション（黄金比）を<br>
+            使用し、顔と歯を絡めた分析を<br>
+            お一人お一人に対して行います。 </p>
+        </div>
+        <div class="element js-animation story_text04">
+          <p>N3Tは、特許第5224432を<br>
+            取得した、最もシンプルな<br>
+            審美回復方法です。</p>
+        </div>
+        <div class="element js-animation story_img06">
+          <p><img src="images/story06.png" width="430" height="444" alt=""/></p>
+        </div>
+      </div>
+  <script>
+/**
+ * 到達したら要素を表示させる
+ */
+function showElementAnimation() {
+
+  var element = document.getElementsByClassName('js-animation');
+  if(!element) return; // 要素がなかったら処理をキャンセル
+  
+  var showTiming = window.innerHeight > 768 ? 200 : 40; // 要素が出てくるタイミングはここで調整
+  var scrollY = window.pageYOffset;
+  var windowH = window.innerHeight;
+
+  for(var i=0;i<element.length;i++) {
+    var elemClientRect = element[i].getBoundingClientRect();
+    var elemY = scrollY + elemClientRect.top;
+    if(scrollY + windowH - showTiming > elemY) {
+      element[i].classList.add('is-show');
+    } else if(scrollY + windowH < elemY) {
+      // 上にスクロールして再度非表示にする場合はこちらを記述
+      element[i].classList.remove('is-show');
+    }
+  }
+}
+showElementAnimation();
+window.addEventListener('scroll', showElementAnimation);</script>
+    </section>
+  </div>
+</main>
+<footer>
+  <p><a href="https://www.hikaridc-guide.com/"><img src="images/hikari_bunner.png" width="300" height="100" alt="審美歯科の治療はひかり歯科クリニック"/></a></p>
+  <p>Copyright &copy; ひかり歯科クリニック All Rights Reserved.</p>
+</footer>
+</body>
+</html>

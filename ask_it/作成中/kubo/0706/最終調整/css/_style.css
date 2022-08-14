@@ -1,0 +1,322 @@
+/* ------------------------------
+   common
+   ------------------------------ */
+body {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: 1.8;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+.inner {
+  margin: 0 auto;
+  width: 1200px;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+/* ------------------------------
+   section
+   ------------------------------ */
+section h2 {
+  margin: 100px 0 50px;
+  color: #707070;
+  font-size: 3.5em;
+  text-align: center;
+}
+/* ------------------------------
+   header
+   ------------------------------ */
+header {
+  width: 100%;
+  position: absolute;
+  z-index: 100;
+  left: 50%;
+  transform: translateX(-50%);
+}
+header h1 {
+  float: left;
+}
+/* ------------------------------
+   nav
+   ------------------------------ */
+nav {
+  margin-left: 200px;
+}
+nav ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+nav li {
+  float: left;
+}
+/* btn01 */
+.btn01 {
+  background: url("../images/btn_1_on.png") no-repeat;
+  width: 150px;
+  height: 61px;
+}
+.btn01 a {
+  display: inline-block;
+}
+.btn01 a:hover {
+  background-color: transparent; /* IE6対応 */
+}
+.btn01 a:hover img {
+  visibility: hidden;
+}
+/* btn02 */
+.btn02 {
+  background: url("../images/btn_2_on.png") no-repeat;
+  width: 150px;
+  height: 61px;
+}
+.btn02 a {
+  display: inline-block;
+}
+.btn02 a:hover {
+  background-color: transparent; /* IE6対応 */
+}
+.btn02 a:hover img {
+  visibility: hidden;
+}
+/* btn03 */
+.btn03 {
+  background: url("../images/btn_3_on.png") no-repeat;
+  width: 150px;
+  height: 61px;
+}
+.btn03 a {
+  display: inline-block;
+}
+.btn03 a:hover {
+  background-color: transparent; /* IE6対応 */
+}
+.btn03 a:hover img {
+  visibility: hidden;
+}
+/* btn04 */
+.btn04 {
+  background: url("../images/btn_4_on.png") no-repeat;
+  width: 150px;
+  height: 61px;
+}
+.btn04 a {
+  display: inline-block;
+}
+.btn04 a:hover {
+  background-color: transparent; /* IE6対応 */
+}
+.btn04 a:hover img {
+  visibility: hidden;
+}
+/* btn05 */
+.btn05 {
+  background: url("../images/btn_5_on.png") no-repeat;
+  width: 150px;
+  height: 61px;
+}
+.btn05 a {
+  display: inline-block;
+}
+.btn05 a:hover {
+  background-color: transparent; /* IE6対応 */
+}
+.btn05 a:hover img {
+  visibility: hidden;
+}
+/* btn06 */
+.btn06 {
+  background: url("../images/btn_6_on.png") no-repeat;
+  width: 150px;
+  height: 61px;
+}
+.btn06 a {
+  display: inline-block;
+}
+.btn06 a:hover {
+  background-color: transparent; /* IE6対応 */
+}
+.btn06 a:hover img {
+  visibility: hidden;
+}
+/* ------------------------------
+   carouFredSel-6.2.1-packed.js
+   ------------------------------ */
+#mainimage {
+  top: 0px;
+  left: 0px;
+}
+.slide p {
+  float: left;
+}
+/* ------------------------------
+   efect
+   ------------------------------ */
+.js-animation {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(50px);
+  transition: all 1.5s;
+}
+.js-animation.is-show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0px);
+}
+/* ------------------------------
+   fotter
+   ------------------------------ */
+.wrapper {
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 250px;
+  height: auto;
+}
+footer {
+  height: 250px;
+  background-color: #50214A;
+  text-align: center;
+  color: #FFFFFF;
+  padding-top: 50px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-bottom: 50px;
+}
+/* ------------------------------
+   sec story
+   ------------------------------ */
+.story_box01 {
+  width: 1200px;
+  height: 1000px;
+  position: relative;
+}
+.story_text01 {
+  position: absolute;
+  top: 100px;
+  left: 150px;
+}
+.story_img01 {
+  position: absolute;
+  top: 0px;
+  left: 600px;
+}
+.story_img02 {
+  position: absolute;
+  left: 450px;
+  top: 550px;
+}
+.story_img03 {
+  position: absolute;
+  top: 650px;
+  left: 700px;
+}
+.story_box02 {
+  width: 1200px;
+  height: 900px;
+  position: relative;
+}
+.story_img04 {
+  position: absolute;
+  top: 0px;
+  left: 68px;
+}
+.story_img05 {
+  position: absolute;
+  left: 488px;
+  top: 560px;
+}
+.story_text02 {
+  position: absolute;
+  top: 150px;
+  left: 655px;
+}
+.story_box03 {
+  width: 1200px;
+  height: 700px;
+  position: relative;
+}
+.story_img06 {
+  position: absolute;
+  left: 600px;
+}
+.story_text03 {
+  position: absolute;
+  top: 20px;
+  left: 190px;
+}
+.story_text04 {
+  position: absolute;
+  left: 190px;
+  top: 150px;
+}
+/* ------------------------------
+   main
+   ------------------------------ */
+main {
+  /* [disabled]z-index: 1; */
+}
+/* ------------------------------
+   promise <section>
+   ------------------------------ */
+.promise_text {
+  margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 50px;
+  width: 600px;
+}
+.promise_box {
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+    width: 1000px;
+    height: 380px;
+    margin-bottom: 50px;
+}
+.promise_col {
+  width: 320px;
+  float: left;
+}
+.promise_col p {
+    width: 320px;
+    text-align: center;
+}
+.promise_text h3 {
+    text-align: center;
+    padding-bottom: 50px;
+}
+.promise_text p img {
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+    text-align: center;
+}
+text_right  {
+    text-align: right;
+}
+
+
+#mainimage .slide p {
+  float: right;
+}
+/* ------------------------------
+   banner <section>
+   ------------------------------ */
+.banner_box {
+  width: 720px;
+  margin: 0 auto;
+}
+.banner_box p {
+  float: left;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
