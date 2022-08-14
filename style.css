@@ -1,0 +1,521 @@
+@charset "utf-8";
+
+/* ========================================
+    リセットcss
+========================================= */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-style:normal;
+	font-weight: normal;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html{overflow-y: scroll;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {content: ''; content: none;}
+input, textarea,{margin: 0; padding: 0;}
+ol, ul{list-style:none;}
+table{border-collapse: collapse; border-spacing:0;}
+caption, th{text-align: left;}
+a:focus {outline:none;}
+
+
+body {
+    font-family: 'David Libre', serif;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 100px auto;
+}
+
+a {
+    text-decoration: none;
+    color: #0e0e0e;
+}
+
+.all-h2 {
+    font-size: 40px;
+    text-align: center;
+    padding: 85px 0 100px;
+}
+
+.main {
+    background-image: url(images/main.jpg);
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: overlay;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+.header-bg {
+    background-color: rgba(255,255, 255, 0.8);
+    padding: 50px 0;
+
+
+}
+
+header {
+    text-align: center;
+    margin: 0 auto;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+  
+}
+
+header h1 {
+    margin-top: 10px;
+}
+
+header nav {
+
+
+}
+
+header ul {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+
+}
+
+header ul li {
+    font-size:30px;
+}
+
+.an-bar {
+    text-transform: uppercase;
+  }
+
+  .an-bar li {
+    display: inline-block;
+    list-style: outside none none;
+    padding: 0;
+  }
+  .an-bar a {
+    padding: 0.3em 0;
+    color: rgba(0, 0, 0, 0.8);
+    position: relative;
+    letter-spacing: 1px;
+    text-decoration: none;
+  }
+  .an-bar a:before,
+  .an-bar a:after {
+    position: absolute;
+    transition: all 0.35s ease;
+  }
+  .an-bar a:before {
+    bottom: 0;
+    display: inline-block;
+    height: 3px;
+    width: 0%;
+    content: "";
+    background-color: orange;
+  }
+
+  .an-bar a:hover:before,
+  .an-bar .current a:before {
+    opacity: 1;
+    width: 100%;
+  }
+
+  /*--------------------スキル---------------------*/
+/* .skill {
+    width: 1000px;
+    margin: 0 auto;
+} */
+
+
+  .skill h2 {
+      font-size: 40px;
+  }
+
+  .skill-contents {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+  }
+
+  .skill-box {
+      display: flex;
+      width: calc(50% - 10px);
+      padding-bottom: 80px;
+  }
+
+   .skill-box h3 {
+     font-size: 20px;
+  }
+
+  .skill-contents {
+    /* justify-content: space-between; */
+  }
+  .skill-contents-left {
+      width:50%;
+      text-align: center;
+  }
+
+   .skill-contents-left img {
+     max-width: 150px;
+     padding-bottom:20px;
+  }
+
+  .middle-bg-01 {
+    background-image: url(images/middle-bg01.jpg);
+
+  }
+
+  .middle-bg-02 {
+    background-image: url(images/middle-bg02.jpg);
+
+  }
+  
+
+  .skill-contents-left {
+      width: 200px;
+  }
+
+  .middle-bg-01 {
+    color: #FFF;
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+      height: 600px;
+      background-attachment: fixed;
+      background-color: rgba(0, 0, 0, 0.3);
+      background-blend-mode: overlay;
+  }
+  .middle-bg-02 {
+    color: #FFF;
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+      height: 400px;
+      background-attachment: fixed;
+      background-color: rgba(0, 0, 0, 0.3);
+      background-blend-mode: overlay;
+  }
+
+
+  .middle-bg-01, .middle-bg-02, .middle-bg-03{
+    position: relative;
+   
+    /*レイアウト用のCSS*/
+  }
+  .middle-bg-01::after{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+   
+    /*ここで三角形のサイズを決める。
+    必ず幅100vwにして、ブラウザサイズいっぱいにしてください。*/
+    border-width: 0 0 200px 100vw ;
+   
+    border-color: transparent transparent  transparent #fff;
+  }
+  .middle-bg-01::before{
+    content:"";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+   
+    /*ここで三角形のサイズを決める。
+    必ず幅100vwにして、ブラウザサイズいっぱいにしてください。*/
+    border-width: 0 0 200px 100vw ;
+   
+    border-color: transparent transparent #fff transparent;
+  }
+
+  .middle-bg-02 {
+      padding-top: 120px;
+  }
+  .middle-bg-02::after{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+   
+    /*ここで三角形のサイズを決める。
+    必ず幅100vwにして、ブラウザサイズいっぱいにしてください。*/
+    border-width: 300px 0 0  100vw ;
+   
+    border-color:#fff  transparent   transparent  transparent ;
+  }
+  .middle-bg-02::before{
+    content:"";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+   
+    /*ここで三角形のサイズを決める。
+    必ず幅100vwにして、ブラウザサイズいっぱいにしてください。*/
+    border-width:200px  0 0  100vw ;
+   
+    border-color: transparent transparent  transparent ;
+  }
+
+
+
+
+  .work {
+    
+  }
+  .work-contents {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+  }
+
+  .work-box {
+      width: calc(30% - 3%);
+      height: 250px;
+      margin: 3% 0;
+      background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .blog-contents {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.blog-box {
+    width: calc(30% - 3%);
+    height: 250px;
+    margin: 3% 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.middle-bg-03 {
+  background-image: url(images/middle-bg03.jpg);
+  background-color: rgba(0, 0, 0, 0.2);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: bottom;
+}
+
+.Contact {
+  padding-top: 200px;
+  height: 1000px;
+  margin: 0 auto;
+}
+.Contact::after{
+  content:"";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+ 
+  /*ここで三角形のサイズを決める。
+  必ず幅100vwにして、ブラウザサイズいっぱいにしてください。*/
+  border-width:   0 0 200px 100vw ;
+ 
+  border-color:  transparent     transparent    transparent  #fff   ;
+}
+.Contact::before{
+  content:"";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+ 
+  /*ここで三角形のサイズを決める。
+  必ず幅100vwにして、ブラウザサイズいっぱいにしてください。*/
+  border-width:200px  0 0  100vw ;
+ 
+  border-color: transparent transparent  transparent #4b4b4b ;
+}
+
+footer {
+  color: #fff;
+  text-align: center;
+  height: 200px;
+  background-color: #4b4b4b;
+  padding-top: 60px;
+}
+
+
+/*---------------------------------------------------------------------------
+--------------------コンタクト--------------------------
+------------------------*/
+#contact.wrapper {
+  width:35%;
+}
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.Contact-contents .Contact-box {
+  margin: 0 auto
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="phone"],
+textarea {
+  background-color: rgba(255,255, 255, .8);
+  border: 1px solid  #fff;
+  border-radius: 3px;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+
+}
+
+textarea {
+  height:10rem;
+}
+
+input[type="submit"] {
+  margin-top: 15px;
+  letter-spacing: 3px;
+  width: 150px;
+  height: 50px;
+  color: #FFF;
+  border:2px solid #fff;
+  background-color: rgba(121, 121, 121, 0.5);
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: 600;
+}
+
+input[type="submit"]:hover {
+  letter-spacing: 6px;
+  background-color:rgba(240, 153, 59, .9);
+
+}
+
+@media (max-width:700px) {
+
+  
+.all-h2 {
+  font-size: 40px;
+  text-align: center;
+  padding: 3px 0 50px;
+}
+
+  .main {
+    height: 80%;
+    background-position-x: 50%;
+    background-size: cover;
+  }
+
+  header {
+    width: 100%;
+  }
+
+header ul {
+  flex-direction: column;
+}
+
+header ul li {
+  margin-bottom: 10px;
+}
+
+.skill-box {
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+
+.middle-bg-03 {
+ background-position-x: 25%;
+}
+
+#contact.wrapper {
+  width:70%;
+}
+
+.Contact::after{
+  border-width:   0 0 100px 100vw ;
+}
+.Contact::before{
+  border-width:100px  0 0  100vw ;
+ 
+}
+
+footer {
+  height: 50px;
+}
+
+.middle-bg-01 {
+  background-position-x: 60%;
+  background-position-y: 50%;
+  height: 400px;
+}
+
+.middle-bg-01::after{
+
+  border-width: 0 0 100px 100vw ;
+ 
+  border-color: transparent transparent  transparent #fff;
+}
+.middle-bg-01::before{
+
+  border-width: 0 0 100px 100vw ;
+ 
+  border-color: transparent transparent #fff transparent;
+}
+
+.middle-bg-02 {
+  background-position-x: 20%;
+  background-position-y: 0%;
+  padding: 0;
+  height: 400px;
+}
+
+.middle-bg-02::after{
+
+  border-width: 100px 0 0  100vw ;
+ 
+  border-color:#fff  transparent   transparent  transparent ;
+}
+.middle-bg-02::before{
+
+  border-width:100px  0 0  100vw ;
+ 
+  border-color: transparent transparent  transparent #fff  ;
+}
+
+}
